@@ -1,0 +1,102 @@
+# Alasora Tech Center
+
+> Centre de formation technologique à domicile, situé à Alasora (Antananarivo, Madagascar).
+> Slogan : « Ne soyez plus un simple spectateur ».
+> Site : https://A-COMPLETER-LORS-DE-LA-MISE-EN-LIGNE (une fois le domaine enregistré, remplacer cette URL partout, y compris ici)
+
+Alasora Tech Center (ATC) propose des séances de formation individuelles,
+dispensées **à domicile** par un formateur qui se déplace chez l'apprenant,
+à Alasora et dans tout Antananarivo (Madagascar). Les 8 formations couvrent
+les compétences numériques les plus demandées : programmation, développement
+web et mobile, administration systèmes & réseaux, intelligence artificielle,
+cybersécurité, Arduino/électronique et bureautique.
+
+Chaque séance coûte **15 000 Ariary (MGA)**, quel que soit le domaine, avec un
+programme structuré en 6 modules progressifs et un vrai projet pratique.
+Les formations sont proposées **à but éducatif** : les certificats officiels
+seront délivrés à l'ouverture des cours en salle.
+
+## Comment s'inscrire
+
+Les inscriptions se font par WhatsApp (message pré-rempli depuis le bouton
+« S'inscrire » du site), par téléphone ou par e-mail :
+
+- WhatsApp : +261 32 87 543 06 (https://wa.me/261328754306)
+- Téléphone : +261 33 73 292 04 · +261 38 32 062 18
+- E-mail : hgbmichel@gmail.com
+- Facebook : https://www.facebook.com/profile.php?id=61552273513133
+
+## Les formations
+
+Chaque formation a sa page `/formations/<slug>` avec : description,
+programme détaillé (6 modules), débouchés professionnels, prérequis
+(dépendances entre formations) et diagramme de parcours interactif.
+
+### Programmation (/formations/programmation)
+
+La base de toutes les carrières tech : algorithmique, logique, structures
+de données, programmation orientée objet. Aucun prérequis — c'est la porte
+d'entrée recommandée avant le web, le mobile ou l'IA. Ouvre vers :
+Développement Web, Développement Mobile, Intelligence Artificielle,
+Cybersécurité, Arduino.
+
+### Développement Web (/formations/developpement-web)
+
+De la première page HTML à une application complète : HTML/CSS, JavaScript,
+React, API REST, bases de données, mise en production. Prérequis :
+Programmation (requis). Débouchés : développeur front-end/back-end/full-stack,
+freelance international, création de sites pour entreprises.
+
+### Développement Mobile (/formations/developpement-mobile)
+
+Concevoir et publier des applications Android/iOS avec Flutter & Dart :
+UI/UX mobile, navigation, API, stockage local, publication sur le Play Store.
+Prérequis : Programmation (requis). Débouchés : développeur d'applications,
+startups et studios mobiles, applications métiers pour PME.
+
+### Administration Système & Réseaux (/formations/administration-systeme-et-reseaux)
+
+Installer, configurer et sécuriser des machines et des réseaux : Windows et
+Linux, TCP/IP, DNS/DHCP, serveurs, sauvegardes. Aucun prérequis. Ouvre vers :
+Cybersécurité. Débouchés : technicien support, administrateur systèmes &
+réseaux, helpdesk, datacenter/FAI.
+
+### Intelligence Artificielle (/formations/intelligence-artificielle)
+
+Comment les machines apprennent : Python pour les données, machine learning,
+réseaux de neurones, IA générative (LLM, prompting), projet appliqué.
+Prérequis : Programmation (requis). Débouchés : data analyst junior,
+automatisation, analyse de données pour entreprises.
+
+### Cybersécurité (/formations/cybersecurite)
+
+Comprendre les attaques pour mieux défendre : sécurité des systèmes et des
+réseaux, chiffrement, phishing et malwares (défense), tests éthiques
+encadrés, réponse à incident. Formation strictement éducative et défensive.
+Prérequis : Administration Système & Réseaux (requis) + Programmation
+(requis). Débouchés : analyste SOC, technicien sécurité, auditeur junior.
+
+### Arduino & Électronique (/formations/arduino)
+
+Du code qui agit sur le monde réel : circuits de base, capteurs, actionneurs,
+domotique, projets IoT et robotique. Prérequis : Programmation (conseillé).
+Débouchés : technicien électronique, projets IoT/domotique, robotique
+éducative, prototypage.
+
+### Bureautique (/formations/bureautique)
+
+Maîtriser l'ordinateur au quotidien : traitement de texte, tableur (Excel),
+présentations, e-mail professionnel, outils collaboratifs. Aucun prérequis.
+Débouchés : secrétariat, gestion administrative, saisie de données — un
+atout pour tous les métiers de bureau.
+
+## Structure du site
+
+- `/` — accueil : slogan, méthode, carte des parcours (niveaux 1 et 2),
+  atouts, tarif 15 000 Ar/séance, FAQ, contacts.
+- `/formations` — catalogue des 8 formations avec images et prérequis.
+- `/formations/<slug>` — fiche détaillée : diagramme de dépendances,
+  programme en 6 modules, fiche technique, débouchés, inscription WhatsApp.
+- `/sitemap.xml`, `/robots.txt` — indexation.
+- Thème clair/sombre avec bascule ; site responsive et animé.
+- Langue du site : français. Zone desservie : Alasora et Antananarivo.

@@ -1,0 +1,192 @@
+
+> dev
+> react-router dev
+
+[restart] Relaunching with NODE_OPTIONS: --conditions=development
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+4:32:44 PM [vite] (ssr) connected.
+4:52:41 PM [react-router] Config saved
+4:53:47 PM [react-router] Config saved
+4:54:18 PM [vite] (client) hmr update /app/app.css
+4:54:18 PM [vite] (ssr) hmr update /app/app.css
+4:54:18 PM [react-router] Config changed.
+5:02:28 PM [vite] (client) hmr update /app/routes/home.tsx
+5:02:28 PM [vite] (ssr) page reload app/routes/home.tsx
+5:02:28 PM [vite] (ssr) program reload
+5:02:28 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'Link'.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/home.tsx:135:7 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m 83 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mLink
+ [38;5;240m    │[0m      ──┬─  
+ [38;5;240m    │[0m        ╰─── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m135 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0marticle[38;5;249m>[0m
+ [38;5;240m    │[0m       ───┬───  
+ [38;5;240m    │[0m          ╰───── Expected `</Link>`
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /home/hashterx/front_test/app/routes/home.tsx
+      at transformWithOxc (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7208:19)
+      at TransformPluginContext.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7280:26)
+      at EnvironmentPluginContainer.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:8172:51)
+      at async loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19634:26)
+5:02:28 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'Link'.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/home.tsx:135:7 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m 83 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mLink
+ [38;5;240m    │[0m      ──┬─  
+ [38;5;240m    │[0m        ╰─── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m135 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0marticle[38;5;249m>[0m
+ [38;5;240m    │[0m       ───┬───  
+ [38;5;240m    │[0m          ╰───── Expected `</Link>`
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /home/hashterx/front_test/app/routes/home.tsx
+      at transformWithOxc (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7208:19)
+      at TransformPluginContext.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7280:26)
+      at EnvironmentPluginContainer.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:8172:51)
+      at async loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19634:26)
+5:02:28 PM [vite] (ssr) An error happened during full reload
+Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'Link'.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/home.tsx:135:7 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m 83 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mLink
+ [38;5;240m    │[0m      ──┬─  
+ [38;5;240m    │[0m        ╰─── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m135 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0marticle[38;5;249m>[0m
+ [38;5;240m    │[0m       ───┬───  
+ [38;5;240m    │[0m          ╰───── Expected `</Link>`
+[38;5;246m─────╯[0m
+
+Error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'Link'.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/home.tsx:135:7 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m 83 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mLink
+ [38;5;240m    │[0m      ──┬─  
+ [38;5;240m    │[0m        ╰─── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m135 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0marticle[38;5;249m>[0m
+ [38;5;240m    │[0m       ───┬───  
+ [38;5;240m    │[0m          ╰───── Expected `</Link>`
+[38;5;246m─────╯[0m
+
+    at transformWithOxc (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7208:19)
+    at TransformPluginContext.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7280:26)
+    at EnvironmentPluginContainer.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:8172:51)
+    at async loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19634:26)
+    at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+    at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+5:03:05 PM [vite] (client) hmr update /app/routes/home.tsx
+5:03:05 PM [vite] (client) hmr update /app/routes/home.tsx
+5:03:05 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+5:03:05 PM [vite] (ssr) page reload app/routes/home.tsx
+5:03:47 PM [vite] (client) hmr update /app/routes/home.tsx
+5:03:47 PM [vite] (client) hmr update /app/routes/home.tsx
+5:03:47 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+5:03:47 PM [vite] (ssr) page reload app/routes/home.tsx
+5:03:47 PM [vite] (ssr) program reload
+5:09:30 PM [vite] (client) hmr update /app/app.css
+5:09:30 PM [vite] (ssr) page reload app/routes/scooters.$slug.tsx
+5:09:30 PM [vite] (ssr) program reload
+5:10:20 PM [vite] (client) hmr update /app/app.css
+5:10:20 PM [vite] (ssr) page reload app/routes/scooters.$slug.tsx
+5:10:20 PM [vite] (ssr) program reload
+5:11:24 PM [vite] (client) hmr update /app/routes/home.tsx
+5:11:24 PM [vite] (client) hmr update /app/routes/home.tsx
+5:11:24 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+5:11:24 PM [vite] (ssr) page reload app/routes/home.tsx
+5:11:24 PM [vite] (ssr) program reload
+5:14:17 PM [react-router] Config saved
+5:14:42 PM [react-router] Config saved
+5:15:01 PM [vite] (client) hmr update /app/routes/home.tsx
+5:15:01 PM [vite] (client) hmr update /app/routes/home.tsx
+5:15:01 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+5:15:01 PM [vite] (ssr) page reload app/routes/home.tsx
+5:15:01 PM [vite] (ssr) program reload
+5:16:48 PM [vite] (client) hmr update /app/routes/home.tsx
+5:16:48 PM [vite] (client) hmr update /app/routes/home.tsx
+5:16:48 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+5:16:48 PM [vite] (ssr) page reload app/routes/home.tsx
+5:16:48 PM [vite] (ssr) program reload
+5:17:12 PM [vite] (client) hmr update /app/routes/scooters.$slug.tsx
+5:17:12 PM [vite] (ssr) page reload app/routes/scooters.$slug.tsx
+5:17:12 PM [vite] (ssr) program reload
+5:17:12 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'main'.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/scooters.$slug.tsx:72:9 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m54 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mmain[38;5;249m>[0m
+ [38;5;240m   │[0m        ──┬─  
+ [38;5;240m   │[0m          ╰─── Opened here
+ [38;5;240m   │[0m 
+ [38;5;246m72 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mnav[38;5;249m>[0m
+ [38;5;240m   │[0m         ─┬─  
+ [38;5;240m   │[0m          ╰─── Expected `</main>`
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /home/hashterx/front_test/app/routes/scooters.$slug.tsx
+      at transformWithOxc (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7208:19)
+      at TransformPluginContext.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7280:26)
+      at EnvironmentPluginContainer.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:8172:51)
+      at async loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19634:26)
+      at async viteTransformMiddleware (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19853:20)
+5:17:12 PM [vite] (ssr) An error happened during full reload
+Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'main'.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/scooters.$slug.tsx:72:9 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m54 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mmain[38;5;249m>[0m
+ [38;5;240m   │[0m        ──┬─  
+ [38;5;240m   │[0m          ╰─── Opened here
+ [38;5;240m   │[0m 
+ [38;5;246m72 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mnav[38;5;249m>[0m
+ [38;5;240m   │[0m         ─┬─  
+ [38;5;240m   │[0m          ╰─── Expected `</main>`
+[38;5;246m────╯[0m
+
+Error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'main'.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m app/routes/scooters.$slug.tsx:72:9 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m54 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mmain[38;5;249m>[0m
+ [38;5;240m   │[0m        ──┬─  
+ [38;5;240m   │[0m          ╰─── Opened here
+ [38;5;240m   │[0m 
+ [38;5;246m72 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mnav[38;5;249m>[0m
+ [38;5;240m   │[0m         ─┬─  
+ [38;5;240m   │[0m          ╰─── Expected `</main>`
+[38;5;246m────╯[0m
+
+    at transformWithOxc (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7208:19)
+    at TransformPluginContext.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:7280:26)
+    at EnvironmentPluginContainer.transform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:8172:51)
+    at async loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19634:26)
+    at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+    at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+5:18:01 PM [vite] (client) hmr update /app/routes/scooters.$slug.tsx
+5:18:01 PM [vite] (client) hmr update /app/routes/scooters.$slug.tsx
+5:18:01 PM [vite] (client) hmr update /app/app.css, /app/routes/scooters.$slug.tsx
+5:18:01 PM [vite] (ssr) page reload app/routes/scooters.$slug.tsx
+5:19:05 PM [vite] (client) hmr update /app/routes/scooters.$slug.tsx
+5:19:05 PM [vite] (client) hmr update /app/routes/scooters.$slug.tsx
+5:19:05 PM [vite] (client) hmr update /app/app.css, /app/routes/scooters.$slug.tsx
+5:19:05 PM [vite] (ssr) page reload app/routes/scooters.$slug.tsx
