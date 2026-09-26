@@ -51,3 +51,53 @@
 11:53:36 PM [vite] (client) hmr update /app/app.css, /app/components/roadmap.tsx
 11:53:36 PM [vite] (ssr) page reload app/components/roadmap.tsx
 11:53:36 PM [vite] (ssr) program reload
+11:55:27 PM [vite] (client) hmr update /app/routes/home.tsx
+11:55:27 PM [vite] (client) hmr update /app/routes/home.tsx
+11:55:27 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+11:55:27 PM [vite] (ssr) page reload app/routes/home.tsx
+11:55:27 PM [vite] (ssr) program reload
+11:55:43 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:55:43 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:55:43 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
+11:55:43 PM [vite] (ssr) page reload app/routes/formations._index.tsx
+11:55:43 PM [vite] (ssr) program reload
+11:55:54 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:55:54 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:55:54 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
+11:55:54 PM [vite] (ssr) page reload app/routes/formations._index.tsx
+11:55:54 PM [vite] (ssr) program reload
+11:56:28 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:56:28 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:56:28 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
+11:56:28 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
+11:56:28 PM [vite] (ssr) program reload
+11:56:39 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:56:39 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:56:39 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
+11:56:39 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
+11:56:39 PM [vite] (ssr) program reload
+11:57:14 PM [vite] (client) hmr update /app/components/roadmap.tsx
+11:57:14 PM [vite] (client) hmr update /app/components/roadmap.tsx
+11:57:14 PM [vite] (client) hmr update /app/app.css, /app/components/roadmap.tsx
+11:57:14 PM [vite] (ssr) page reload app/components/roadmap.tsx
+11:57:14 PM [vite] (ssr) program reload
+11:57:14 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:57:14 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:57:14 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
+11:57:14 PM [vite] (ssr) page reload app/routes/formations._index.tsx
+11:57:14 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:57:14 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:57:14 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
+11:57:14 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
+11:57:14 PM [vite] (ssr) program reload
+11:57:14 PM [vite] (ssr) program reload
+11:57:29 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:57:29 PM [vite] (client) hmr update /app/routes/formations._index.tsx
+11:57:29 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
+11:57:29 PM [vite] (ssr) page reload app/routes/formations._index.tsx
+11:57:29 PM [vite] (ssr) program reload
+11:57:38 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:57:38 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:57:38 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
+11:57:38 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
+11:57:38 PM [vite] (ssr) program reload

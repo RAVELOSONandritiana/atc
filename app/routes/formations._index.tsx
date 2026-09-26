@@ -58,7 +58,7 @@ export default function FormationsIndex({
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-br from-zinc-950/95 via-zinc-950/85 to-brand-950/85"
+            className="absolute inset-0 -z-10 bg-zinc-950/80"
           />
           <div className="mx-auto max-w-6xl px-4 pb-16 pt-32 text-center sm:px-6 sm:pt-36">
             <p className="animate-fade-in text-xs font-bold uppercase tracking-[0.2em] text-brand-300">
@@ -87,7 +87,7 @@ export default function FormationsIndex({
                   <Link
                     to={`/formations/${f.slug}`}
                     prefetch="intent"
-                    className="group flex h-full flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-brand-300 hover:shadow-2xl hover:shadow-brand-600/10 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-600"
+                    className="group flex h-full flex-col overflow-hidden rounded-lg border border-zinc-200 bg-white transition-colors hover:border-brand-400 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-500"
                   >
                     <div className="relative aspect-[16/10] overflow-hidden">
                       <img
@@ -101,13 +101,12 @@ export default function FormationsIndex({
                       />
                       <div
                         aria-hidden="true"
-                        className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 via-transparent to-transparent"
+                        className="absolute inset-0 bg-zinc-950/30"
                     />
-                      <span className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-brand-700 backdrop-blur dark:bg-zinc-950/90 dark:text-brand-300">
-                        <SiteIcon markup={f.icon} className="h-3.5 w-3.5" />
+                      <span className="absolute bottom-3 left-3 rounded-md bg-white/90 px-2.5 py-1 text-xs font-medium text-zinc-800 backdrop-blur dark:bg-zinc-950/90 dark:text-zinc-200">
                         {f.level}
                       </span>
-                      <span className="absolute right-3 top-3 rounded-full bg-gradient-to-r from-brand-600 to-accent-500 px-3 py-1.5 text-xs font-bold text-white shadow-lg">
+                      <span className="absolute right-3 top-3 rounded-md bg-zinc-900/85 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur dark:bg-zinc-950/85">
                         15 000 Ar / séance
                       </span>
                     </div>
@@ -171,7 +170,7 @@ export default function FormationsIndex({
                 href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-full bg-gradient-to-r from-brand-600 to-accent-500 px-7 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5"
+                className="mt-6 inline-block rounded-md bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-500"
               >
                 Demander conseil
               </a>

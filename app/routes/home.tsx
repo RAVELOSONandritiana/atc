@@ -2,7 +2,6 @@ import { Link } from "react-router";
 import { SiteHeader } from "~/components/site-header";
 import { SiteFooter } from "~/components/site-footer";
 import { Reveal } from "~/components/reveal";
-import { SiteIcon } from "~/components/site-icon";
 import {
   formations,
   getFormation,
@@ -19,7 +18,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const origin = loaderData?.origin ?? "http://localhost:5173";
   const title = `${site.name} — Formations informatiques à domicile à Alasora, Antananarivo`;
   const description =
-    "Ne soyez plus un simple spectateur : programmation, web, mobile, IA, cybersécurité, réseaux, Arduino et bureautique. 15 000 Ar la séance à domicile à Alasora, Antananarivo.";
+    "Formations à domicile à Alasora (Antananarivo) : programmation, web, mobile, réseaux, IA, cybersécurité, Arduino et bureautique. 15 000 Ar la séance, séance par séance.";
 
   return [
     { title },
@@ -29,7 +28,10 @@ export function meta({ loaderData }: Route.MetaArgs) {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:url", content: `${origin}/` },
-    { property: "og:image", content: unsplash("1522071820081-009f0129c71c", 1200) },
+    {
+      property: "og:image",
+      content: unsplash("1522071820081-009f0129c71c", 1200),
+    },
     { property: "og:locale", content: "fr_FR" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: title },
@@ -39,9 +41,11 @@ export function meta({ loaderData }: Route.MetaArgs) {
 }
 
 export function loader({ request }: Route.LoaderArgs) {
-  const origin = canonicalOrigin(request.headers.get("X-Forwarded-Proto")
-    ? `${request.headers.get("X-Forwarded-Proto")}://${request.headers.get("host")}`
-    : request.url);
+  const origin = canonicalOrigin(
+    request.headers.get("X-Forwarded-Proto")
+      ? `${request.headers.get("X-Forwarded-Proto")}://${request.headers.get("host")}`
+      : request.url
+  );
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -96,7 +100,6 @@ export function loader({ request }: Route.LoaderArgs) {
         provider: {
           "@type": "EducationalOrganization",
           name: site.name,
-          sameAs: site.siteUrl || undefined,
         },
         offers: {
           "@type": "Offer",
@@ -113,47 +116,47 @@ export function loader({ request }: Route.LoaderArgs) {
 const stats = [
   { value: "8", label: "formations au choix" },
   { value: "15 000 Ar", label: "la séance à domicile" },
-  { value: "100 %", label: "pratique, à votre rythme" },
+  { value: "6", label: "modules par formation" },
 ];
 
 const steps = [
   {
-    icon: '<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+    icon: "fa-solid fa-list-check",
     title: "Choisissez votre formation",
-    text: "Parcourez les 8 domaines et leur parcours détaillé. Pas sûr ? Commencez par la programmation : elle ouvre toutes les portes.",
+    text: "Huit domaines, du bureautique à l'intelligence artificielle. Si vous hésitez, la programmation est le meilleur point de départ : elle prépare à presque tout le reste.",
   },
   {
-    icon: '<circle cx="12" cy="12" r="10"/><path d="M12 8v4l2.5 2.5"/>',
+    icon: "fa-solid fa-chalkboard-user",
     title: "Le formateur vient chez vous",
-    text: "Des séances à domicile, à votre rythme, sur votre propre matériel — à Alasora et dans tout Antananarivo.",
+    text: "Les séances ont lieu à domicile, sur votre propre ordinateur, à Alasora et dans Antananarivo. Vous choisissez les horaires avec le formateur.",
   },
   {
-    icon: '<path d="M20 6 9 17l-5-5"/>',
-    title: "Pratiquez sur de vrais projets",
-    text: "Chaque module aboutit à un projet concret : site web, application, montage électronique, tableau de bord.",
+    icon: "fa-solid fa-laptop-code",
+    title: "Vous pratiquez, séance après séance",
+    text: "Chaque module se termine par un exercice concret : une page web, un petit programme, un montage électronique. À la fin, vous avez un projet à montrer.",
   },
 ];
 
 const whyUs = [
   {
-    icon: '<path d="M12 21s-8-4-8-10V5l8-3 8 3v6c0 6-8 10-8 10z"/>',
-    title: "Apprentissage à domicile",
-    text: "Zéro transport, zéro stress : vous apprenez dans votre environnement, avec un suivi personnel.",
+    icon: "fa-solid fa-chalkboard-user",
+    title: "Un formateur, un apprenant",
+    text: "Les séances sont individuelles. Le rythme s'ajuste à votre niveau : on ralentit sur les points difficiles, on accélère sur ce que vous maîtrisez déjà.",
   },
   {
-    icon: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
-    title: "Suivi individualisé",
-    text: "Un formateur pour vous seul : le rythme s'adapte à votre niveau, vos questions, vos objectifs.",
+    icon: "fa-solid fa-house-laptop",
+    title: "Chez vous, sur votre matériel",
+    text: "Pas de trajet vers un centre : on configure et on travaille directement sur votre ordinateur, comme vous le ferez après la formation.",
   },
   {
-    icon: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
-    title: "Compétences mondiales",
-    text: "Un programme aligné sur les métiers d'ici et de l'international : freelance, télétravail, entreprises locales.",
+    icon: "fa-solid fa-file-invoice",
+    title: "Un programme clair",
+    text: "Chaque formation est découpée en 6 modules annoncés à l'avance. Vous savez ce qui est vu à chaque séance et où vous en êtes.",
   },
   {
-    icon: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h10M7 12h10M7 17h6"/>',
-    title: "Parcours transparents",
-    text: "Chaque formation affiche son programme complet, ses débouchés et ses prérequis avant l'inscription.",
+    icon: "fa-solid fa-graduation-cap",
+    title: "Vers de vraies compétences",
+    text: "Le programme vise les compétences utilisées en entreprise et en freelance, à Madagascar comme à l'étranger.",
   },
 ];
 
@@ -210,7 +213,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       />
       <main id="main">
         {/* ── HERO ─────────────────────────────────────────── */}
-        <section className="relative isolate overflow-hidden">
+        <section className="relative isolate overflow-hidden bg-zinc-950">
           <img
             src={unsplash("1522071820081-009f0129c71c", 1600)}
             alt=""
@@ -218,65 +221,62 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             width={1600}
             height={900}
             fetchPriority="high"
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40"
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-br from-zinc-950/95 via-zinc-950/85 to-brand-950/80"
-          />
-          <div
-            aria-hidden="true"
-            className="animate-gradient absolute inset-0 -z-10 bg-[linear-gradient(120deg,rgba(79,70,229,0.25),rgba(168,85,247,0.18),rgba(79,70,229,0.25))] bg-[length:200%_200%] opacity-70"
+            className="absolute inset-0 -z-10 bg-zinc-950/70"
           />
 
           <div className="mx-auto max-w-6xl px-4 pb-20 pt-32 sm:px-6 sm:pt-40 lg:pb-28">
             <div className="max-w-3xl">
               <Reveal>
-                <p className="animate-fade-in inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-brand-200 backdrop-blur">
-                  <span className="animate-pulse-soft inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                  Inscriptions ouvertes · Alasora, Antananarivo
+                <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-zinc-300">
+                  <i
+                    className="fa-solid fa-location-dot text-brand-400"
+                    aria-hidden="true"
+                  />
+                  Alasora, Antananarivo — formations à domicile
                 </p>
               </Reveal>
-              <Reveal delay={120}>
-                <h1 className="mt-6 text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <Reveal delay={100}>
+                <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
                   Ne soyez plus un simple{" "}
-                  <span className="bg-gradient-to-r from-brand-300 via-accent-400 to-brand-300 bg-clip-text text-transparent">
-                    spectateur
-                  </span>
-                  .
+                  <span className="text-brand-400">spectateur</span>.
                 </h1>
               </Reveal>
-              <Reveal delay={240}>
+              <Reveal delay={200}>
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-300">
-                  {site.name} forme aux compétences numériques qui recrutent,
-                  du premier code au machine learning — des séances à domicile,
-                  à votre rythme, avec de vrais projets.
+                  Apprenez à programmer, créer des sites et des applications,
+                  administrer des réseaux ou maîtriser l'ordinateur. Un
+                  formateur se déplace chez vous, une séance à la fois.
                 </p>
               </Reveal>
-              <Reveal delay={360}>
+              <Reveal delay={300}>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <a
                     href={whatsappLink()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-gradient-to-r from-brand-500 to-accent-500 px-7 py-3.5 text-sm font-bold text-white shadow-xl shadow-brand-600/30 transition hover:-translate-y-0.5 hover:shadow-2xl"
+                    className="rounded-md bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-500"
                   >
-                    S'inscrire sur WhatsApp
+                    <i className="fa-brands fa-whatsapp mr-2" aria-hidden="true" />
+                    Écrire sur WhatsApp
                   </a>
                   <Link
                     to="/formations"
-                    className="rounded-full border border-white/25 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:border-white/50 hover:bg-white/10"
+                    className="rounded-md border border-zinc-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-300 hover:bg-white/10"
                   >
-                    Découvrir les formations
+                    Voir les 8 formations
                   </Link>
                 </div>
               </Reveal>
-              <Reveal delay={480}>
-                <dl className="mt-12 grid max-w-xl grid-cols-3 gap-6">
+              <Reveal delay={400}>
+                <dl className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/15 pt-8">
                   {stats.map((s) => (
                     <div key={s.label}>
                       <dt className="sr-only">{s.label}</dt>
-                      <dd className="text-2xl font-black text-white sm:text-3xl">
+                      <dd className="text-2xl font-bold text-white sm:text-3xl">
                         {s.value}
                       </dd>
                       <dd className="mt-1 text-xs leading-snug text-zinc-400 sm:text-sm">
@@ -299,29 +299,32 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <Reveal>
             <h2
               id="methode-title"
-              className="text-center text-3xl font-black tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+              className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
             >
               Comment ça se passe
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-zinc-600 dark:text-zinc-400">
-              Trois étapes simples, du premier contact à votre premier projet
-              terminé.
+            <p className="mt-3 max-w-2xl text-zinc-600 dark:text-zinc-400">
+              Pas de diplôme requis pour commencer, pas d'engagement : vous
+              avancez séance par séance.
             </p>
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             {steps.map((step, i) => (
-              <Reveal key={step.title} delay={i * 140}>
-                <div className="group relative h-full rounded-2xl border border-zinc-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-xl hover:shadow-brand-600/5 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-700">
-                  <span className="absolute -top-3.5 left-6 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-accent-500 text-sm font-black text-white shadow-md">
-                    {i + 1}
-                  </span>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition group-hover:scale-110 dark:bg-brand-950/60 dark:text-brand-400">
-                    <SiteIcon markup={step.icon} className="h-6 w-6" />
-                  </span>
-                  <h3 className="mt-5 text-lg font-bold text-zinc-900 dark:text-white">
+              <Reveal key={step.title} delay={i * 100}>
+                <div className="h-full rounded-lg border border-zinc-200 p-6 dark:border-zinc-800">
+                  <div className="flex items-center justify-between">
+                    <i
+                      className={`${step.icon} text-xl text-brand-600 dark:text-brand-400`}
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm font-semibold text-zinc-400 dark:text-zinc-500">
+                      0{i + 1}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                     {step.text}
                   </p>
                 </div>
@@ -333,82 +336,79 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         {/* ── PARCOURS (DIAGRAMME GLOBAL) ──────────────────── */}
         <section
           id="parcours"
-          className="border-y border-zinc-200 bg-gradient-to-b from-zinc-50 to-white py-20 dark:border-zinc-800 dark:from-zinc-900/60 dark:to-zinc-950"
+          className="border-y border-zinc-200 bg-zinc-50 py-20 dark:border-zinc-800 dark:bg-zinc-900/40"
           aria-labelledby="parcours-title"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <Reveal>
               <h2
                 id="parcours-title"
-                className="text-center text-3xl font-black tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+                className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
               >
-                Votre parcours, étape par étape
+                Les formations et leurs dépendances
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-center text-zinc-600 dark:text-zinc-400">
-                Les formations se complètent. Les bases s'atteignent
-                directement ; les spécialités s'ouvrent une fois les
-                prérequis maîtrisés. Chaque fiche détaillée affiche son
-                propre diagramme de dépendances.
+              <p className="mt-3 max-w-2xl text-zinc-600 dark:text-zinc-400">
+                Trois formations se suivent sans prérequis. Les autres
+                s'ouvrent une fois les bases acquises — chaque fiche détaille
+                son propre schéma de parcours.
               </p>
             </Reveal>
 
-            <div className="mt-12 space-y-8">
+            <div className="mt-10 space-y-8">
               {/* Niveau 1 : bases */}
               <Reveal>
                 <div>
-                  <p className="mb-4 text-center text-xs font-bold uppercase tracking-[0.18em] text-brand-600 dark:text-brand-400">
-                    Niveau 1 · Les bases — accessibles à tous
+                  <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
+                    Sans prérequis
                   </p>
-                  <div className="flex flex-wrap items-stretch justify-center gap-3">
+                  <div className="flex flex-wrap items-stretch gap-3">
                     {baseFormations.map((f) => (
                       <Link
                         key={f.slug}
                         to={`/formations/${f.slug}`}
                         prefetch="intent"
-                        className="group flex items-center gap-3 rounded-2xl border border-brand-200 bg-white px-5 py-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-brand-800 dark:bg-zinc-900"
+                        className="flex items-center gap-3 rounded-lg border border-zinc-200 bg-white px-5 py-4 transition-colors hover:border-brand-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-brand-500"
                       >
-                        <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-accent-500 text-white">
-                          <SiteIcon markup={f.icon} className="h-5 w-5" />
-                        </span>
                         <span>
-                          <span className="block text-sm font-bold text-zinc-900 dark:text-white">
+                          <span className="block text-sm font-semibold text-zinc-900 dark:text-white">
                             {f.name}
                           </span>
                           <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                            Aucun prérequis
+                            Accessible à tous
                           </span>
                         </span>
+                        <i
+                          className="fa-solid fa-arrow-right ml-2 text-xs text-zinc-400"
+                          aria-hidden="true"
+                        />
                       </Link>
                     ))}
                   </div>
                 </div>
               </Reveal>
 
-              {/* Flèche descendante */}
+              {/* Séparateur */}
               <Reveal>
-                <div aria-hidden="true" className="flex justify-center">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-7 w-7 animate-float text-brand-400"
-                  >
-                    <path d="M12 5v14" />
-                    <path d="m19 12-7 7-7-7" />
-                  </svg>
+                <div aria-hidden="true" className="flex items-center gap-3">
+                  <span className="h-px flex-1 bg-zinc-200 dark:bg-zinc-700" />
+                  <i
+                    className="fa-solid fa-arrow-down text-sm text-zinc-400"
+                    aria-hidden="true"
+                  />
+                  <span className="text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                    puis
+                  </span>
+                  <span className="h-px flex-1 bg-zinc-200 dark:bg-zinc-700" />
                 </div>
               </Reveal>
 
               {/* Niveau 2 : spécialités */}
-              <Reveal delay={120}>
+              <Reveal delay={100}>
                 <div>
-                  <p className="mb-4 text-center text-xs font-bold uppercase tracking-[0.18em] text-accent-600 dark:text-accent-400">
-                    Niveau 2 · Les spécialités
+                  <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
+                    Avec prérequis
                   </p>
-                  <div className="flex flex-wrap items-stretch justify-center gap-3">
+                  <div className="flex flex-wrap items-stretch gap-3">
                     {advancedFormations.map((f) => {
                       const prereqNames = f.prerequisites
                         .map((p) => getFormation(p.slug)?.shortName)
@@ -419,21 +419,22 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                           key={f.slug}
                           to={`/formations/${f.slug}`}
                           prefetch="intent"
-                          className="group flex items-center gap-3 rounded-2xl border border-zinc-200 bg-white px-5 py-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-accent-400 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-accent-500"
+                          className="flex items-center gap-3 rounded-lg border border-zinc-200 bg-white px-5 py-4 transition-colors hover:border-brand-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-brand-500"
                         >
-                          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-100 text-brand-600 transition group-hover:bg-brand-600 group-hover:text-white dark:bg-zinc-800 dark:text-brand-400">
-                            <SiteIcon markup={f.icon} className="h-5 w-5" />
-                          </span>
                           <span>
-                            <span className="block text-sm font-bold text-zinc-900 dark:text-white">
+                            <span className="block text-sm font-semibold text-zinc-900 dark:text-white">
                               {f.name}
                             </span>
                             <span className="block text-xs text-zinc-500 dark:text-zinc-400">
                               {prereqNames
                                 ? `Prérequis : ${prereqNames}`
-                                : "Aucun prérequis"}
+                                : "Accessible à tous"}
                             </span>
                           </span>
+                          <i
+                            className="fa-solid fa-arrow-right ml-2 text-xs text-zinc-400"
+                            aria-hidden="true"
+                          />
                         </Link>
                       );
                     })}
@@ -453,19 +454,20 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <Reveal>
             <h2
               id="pourquoi-title"
-              className="text-center text-3xl font-black tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+              className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
             >
-              Pourquoi {site.name} ?
+              Ce que ça change d'apprendre à domicile
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {whyUs.map((item, i) => (
-              <Reveal key={item.title} delay={i * 120}>
-                <div className="h-full rounded-2xl border border-zinc-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-600/5 dark:border-zinc-800 dark:bg-zinc-900">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-accent-500 text-white">
-                    <SiteIcon markup={item.icon} className="h-5.5 w-5.5" />
-                  </span>
-                  <h3 className="mt-4 text-base font-bold text-zinc-900 dark:text-white">
+              <Reveal key={item.title} delay={i * 80}>
+                <div className="h-full rounded-lg border border-zinc-200 p-6 dark:border-zinc-800">
+                  <i
+                    className={`${item.icon} text-xl text-brand-600 dark:text-brand-400`}
+                    aria-hidden="true"
+                  />
+                  <h3 className="mt-4 text-base font-semibold text-zinc-900 dark:text-white">
                     {item.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
@@ -484,36 +486,50 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           aria-labelledby="tarif-title"
         >
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-brand-700 via-brand-600 to-accent-600 px-6 py-14 text-center shadow-2xl shadow-brand-600/25 sm:px-12">
-              <div
-                aria-hidden="true"
-                className="animate-gradient absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.12),transparent,rgba(255,255,255,0.12))] bg-[length:200%_200%]"
-              />
+            <div className="rounded-lg border border-zinc-200 bg-white px-6 py-12 text-center dark:border-zinc-800 dark:bg-zinc-900 sm:px-12">
               <h2
                 id="tarif-title"
-                className="relative text-3xl font-black tracking-tight text-white sm:text-4xl"
+                className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
               >
-                Un tarif simple et transparent
+                {site.pricePerSession.toLocaleString("fr-FR")}{" "}
+                {site.currencyLabel} la séance
               </h2>
-              <p className="relative mt-4 text-lg text-brand-100">
-                Séance à domicile, tous domaines confondus
+              <p className="mx-auto mt-3 max-w-xl text-zinc-600 dark:text-zinc-400">
+                Le même tarif pour les 8 formations. Vous payez après chaque
+                séance, sans forfait ni engagement — vous arrêtez ou changez
+                de formation quand vous voulez.
               </p>
-              <p className="relative mt-6">
-                <span className="text-6xl font-black tracking-tight text-white">
-                  15 000
-                </span>{" "}
-                <span className="text-2xl font-bold text-brand-200">Ar</span>{" "}
-                <span className="text-lg text-brand-200">/ séance</span>
-              </p>
-              <p className="relative mx-auto mt-4 max-w-md text-sm text-brand-100">
-                Paiement séance par séance, sans engagement. Le formateur se
-                déplace avec un plan de séance clair et un objectif concret.
-              </p>
+              <dl className="mx-auto mt-8 grid max-w-2xl gap-6 text-left sm:grid-cols-3">
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                    Format
+                  </dt>
+                  <dd className="mt-1 text-sm font-medium text-zinc-900 dark:text-white">
+                    Individuel, à domicile
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                    Zone
+                  </dt>
+                  <dd className="mt-1 text-sm font-medium text-zinc-900 dark:text-white">
+                    Alasora & Antananarivo
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                    Durée
+                  </dt>
+                  <dd className="mt-1 text-sm font-medium text-zinc-900 dark:text-white">
+                    ~2 h par module, à votre rythme
+                  </dd>
+                </div>
+              </dl>
               <a
                 href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative mt-8 inline-block rounded-full bg-white px-8 py-3.5 text-sm font-bold text-brand-700 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
+                className="mt-8 inline-block rounded-md bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-500"
               >
                 Réserver une première séance
               </a>
@@ -531,32 +547,23 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             <Reveal>
               <h2
                 id="faq-title"
-                className="text-center text-3xl font-black tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+                className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
               >
                 Questions fréquentes
               </h2>
             </Reveal>
-            <div className="mt-10 space-y-3">
+            <div className="mt-8 space-y-3">
               {faqs.map((faq, i) => (
-                <Reveal key={faq.q} delay={i * 80}>
-                  <details className="group rounded-2xl border border-zinc-200 bg-white transition hover:border-brand-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-700">
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-4.5 text-sm font-semibold text-zinc-900 dark:text-white [&::-webkit-details-marker]:hidden">
+                <Reveal key={faq.q} delay={i * 60}>
+                  <details className="group rounded-lg border border-zinc-200 bg-white transition-colors hover:border-brand-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-700">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-zinc-900 dark:text-white [&::-webkit-details-marker]:hidden">
                       {faq.q}
-                      <svg
+                      <i
+                        className="fa-solid fa-plus text-xs text-brand-500 transition-transform duration-200 group-open:rotate-45"
                         aria-hidden="true"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-4.5 w-4.5 shrink-0 text-brand-500 transition-transform duration-300 group-open:rotate-45"
-                      >
-                        <path d="M12 5v14" />
-                        <path d="M5 12h14" />
-                      </svg>
+                      />
                     </summary>
-                    <p className="px-6 pb-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <p className="px-5 pb-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                       {faq.a}
                     </p>
                   </details>
@@ -575,25 +582,29 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <Reveal>
             <h2
               id="contact-title"
-              className="text-center text-3xl font-black tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+              className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
             >
-              Prêt à passer de l'autre côté ?
+              Pour s'inscrire ou demander conseil
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-zinc-600 dark:text-zinc-400">
-              Écrivez-nous sur WhatsApp ou appelez directement : nous
-              vous conseillons la formation adaptée à votre objectif.
+            <p className="mt-3 max-w-2xl text-zinc-600 dark:text-zinc-400">
+              Un message suffit : dites-nous ce que vous voulez apprendre et
+              votre niveau actuel, nous vous répondons avec un plan de départ.
             </p>
           </Reveal>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <Reveal>
               <a
                 href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block h-full rounded-2xl border border-emerald-300/60 bg-emerald-50 p-6 text-center transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-emerald-800/60 dark:bg-emerald-950/40"
+                className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-emerald-400 dark:border-zinc-800 dark:hover:border-emerald-500"
               >
-                <span className="text-2xl" aria-hidden="true">💬</span>
-                <p className="mt-3 text-sm font-bold text-zinc-900 dark:text-white">
+                <i
+                  className="fa-brands fa-whatsapp text-xl"
+                  style={{ color: "#25D366" }}
+                  aria-hidden="true"
+                />
+                <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                   WhatsApp
                 </p>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
@@ -602,13 +613,16 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               </a>
             </Reveal>
             {site.phones.map((p, i) => (
-              <Reveal key={p.tel} delay={(i + 1) * 120}>
+              <Reveal key={p.tel} delay={(i + 1) * 80}>
                 <a
                   href={`tel:${p.tel}`}
-                  className="block h-full rounded-2xl border border-zinc-200 bg-white p-6 text-center transition duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-700"
+                  className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-brand-400 dark:border-zinc-800 dark:hover:border-brand-500"
                 >
-                  <span className="text-2xl" aria-hidden="true">📞</span>
-                  <p className="mt-3 text-sm font-bold text-zinc-900 dark:text-white">
+                  <i
+                    className="fa-solid fa-phone text-xl text-brand-600 dark:text-brand-400"
+                    aria-hidden="true"
+                  />
+                  <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                     Appel direct
                   </p>
                   <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
@@ -617,13 +631,17 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 </a>
               </Reveal>
             ))}
-            <Reveal delay={360}>
+            <Reveal delay={240}>
               <a
                 href={`mailto:${site.email}`}
-                className="block h-full rounded-2xl border border-zinc-200 bg-white p-6 text-center transition duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-brand-700"
+                className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-brand-400 dark:border-zinc-800 dark:hover:border-brand-500"
               >
-                <span className="text-2xl" aria-hidden="true">✉️</span>
-                <p className="mt-3 text-sm font-bold text-zinc-900 dark:text-white">
+                <i
+                  className="fa-solid fa-envelope text-xl"
+                  style={{ color: "#EA4335" }}
+                  aria-hidden="true"
+                />
+                <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                   E-mail
                 </p>
                 <p className="mt-1 break-all text-sm text-zinc-600 dark:text-zinc-400">
@@ -632,17 +650,22 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               </a>
             </Reveal>
           </div>
-          <Reveal delay={200}>
-            <p className="mt-10 text-center text-sm text-zinc-500 dark:text-zinc-400">
-              📍 {site.fullAddress} · Suivez-nous sur{" "}
+          <Reveal delay={150}>
+            <p className="mt-8 text-sm text-zinc-500 dark:text-zinc-400">
+              <i
+                className="fa-brands fa-facebook mr-2 text-[#1877F2]"
+                aria-hidden="true"
+              />
+              Actualités et annonces sur{" "}
               <a
                 href={site.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-brand-600 underline decoration-brand-300 underline-offset-4 transition hover:text-brand-700 dark:text-brand-400"
+                className="font-medium text-brand-600 underline underline-offset-4 transition-colors hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300"
               >
-                Facebook
-              </a>
+                notre page Facebook
+              </a>{" "}
+              — {site.fullAddress}
             </p>
           </Reveal>
         </section>
