@@ -3,6 +3,7 @@
 > Centre de formation technologique basé à Antananarivo, Madagascar.
 > Slogan : « Ne soyez plus un simple spectateur ».
 > Site : https://A-COMPLETER-LORS-DE-LA-MISE-EN-LIGNE (une fois le domaine enregistré, remplacer cette URL partout, y compris ici)
+> Dernière mise à jour de ce fichier : septembre 2026.
 
 LR Tech Center (LR — « Linear Regression ») propose des séances de formation individuelles,
 actuellement dispensées **à domicile** par un formateur qui se déplace chez
@@ -14,8 +15,9 @@ artificielle, cybersécurité, Arduino/électronique et bureautique.
 
 Chaque séance coûte **15 000 Ariary (MGA)**, quel que soit le domaine, avec un
 programme structuré en 6 modules progressifs et des exercices pratiques.
-Le nombre de séances nécessaire varie selon le niveau et le rythme de
-l'apprenant. Les formations sont proposées **à but éducatif** : les certificats
+Une séance dure **environ 2 heures** ; le nombre de séances nécessaire varie
+selon le niveau et le rythme de l'apprenant (aucun forfait, paiement séance
+par séance). Les formations sont proposées **à but éducatif** : les certificats
 officiels seront délivrés à l'ouverture des cours en salle.
 
 ## Fondateurs
@@ -117,5 +119,6 @@ tous les métiers de bureau.
 - `/formations/<slug>` — fiche détaillée : diagramme de dépendances,
   programme en 6 modules, fiche technique, débouchés, inscription WhatsApp.
 - `/sitemap.xml`, `/robots.txt` — indexation.
-- Thème clair/sombre avec bascule ; site responsive et animé.
+- Thème **sombre par défaut**, avec bascule clair/sombre mémorisée ; site
+  responsive et animé.
 - Langue du site : français. Zone desservie : Antananarivo, Madagascar.
