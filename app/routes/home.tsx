@@ -28,10 +28,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
     { property: "og:title", content: title },
     { property: "og:description", content: description },
     { property: "og:url", content: `${origin}/` },
-    {
-      property: "og:image",
-      content: unsplash("1522071820081-009f0129c71c", 1200),
-    },
+    { property: "og:image", content: `${origin}/logo.png` },
     { property: "og:locale", content: "fr_FR" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: title },
@@ -604,7 +601,15 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 rel="noopener noreferrer"
                 className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-emerald-400 dark:border-zinc-800 dark:hover:border-emerald-500"
               >
-                <i className="fa-brands fa-square-whatsapp text-2xl text-[#25D366]" aria-hidden="true" />
+                <img
+                  src="/whatsapp.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width={24}
+                  height={24}
+                  loading="lazy"
+                  className="h-6 w-6 object-contain"
+                />
                 <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                   WhatsApp
                 </p>
@@ -619,7 +624,15 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                   href={`tel:${p.tel}`}
                   className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-brand-400 dark:border-zinc-800 dark:hover:border-brand-500"
                 >
-                  <i className="fa-solid fa-square-phone text-2xl text-brand-600 dark:text-brand-400" aria-hidden="true" />
+                  <img
+                    src="/phone-apple-iphone.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width={24}
+                    height={24}
+                    loading="lazy"
+                    className="h-6 w-6 object-contain"
+                  />
                   <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                     Appel direct
                   </p>
@@ -634,7 +647,15 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 href={`mailto:${site.email}`}
                 className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-brand-400 dark:border-zinc-800 dark:hover:border-brand-500"
               >
-                <i className="fa-solid fa-envelope text-2xl text-[#EA4335]" aria-hidden="true" />
+                <img
+                  src="/gmail.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width={24}
+                  height={24}
+                  loading="lazy"
+                  className="h-6 w-6 object-contain"
+                />
                 <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                   E-mail
                 </p>
@@ -646,7 +667,15 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           </div>
           <Reveal delay={150}>
             <p className="mt-8 flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
-              <i className="fa-brands fa-facebook text-xl text-[#1877F2]" aria-hidden="true" />
+              <img
+                src="/facebook.svg"
+                alt=""
+                aria-hidden="true"
+                width={20}
+                height={20}
+                loading="lazy"
+                className="h-5 w-5 object-contain"
+              />
               <span>
                 Actualités et annonces sur{" "}
                 <a

@@ -5,8 +5,8 @@ import { site, whatsappLink } from "~/data/site";
 function SocialLink(props: {
   href: string;
   label: string;
+  /** Image du dossier /public (ex. "/whatsapp.svg"). */
   icon: string;
-  colorClass: string;
   external?: boolean;
 }) {
   return (
@@ -17,9 +17,14 @@ function SocialLink(props: {
       {...(props.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className="inline-flex items-center justify-center transition hover:-translate-y-0.5"
     >
-      <i
-        className={`${props.icon} ${props.colorClass} text-2xl`}
+      <img
+        src={props.icon}
+        alt=""
         aria-hidden="true"
+        width={24}
+        height={24}
+        loading="lazy"
+        className="h-6 w-6 object-contain"
       />
     </a>
   );
@@ -32,9 +37,14 @@ export function SiteFooter() {
         {/* Marque + contacts */}
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-xs font-bold text-white">
-              LR
-            </span>
+            <img
+              src="/logo.png"
+              alt="Logo LR Tech Center"
+              width={36}
+              height={36}
+              loading="lazy"
+              className="h-9 w-9 rounded-lg object-contain"
+            />
             <div className="leading-tight">
               <p className="text-sm font-bold text-zinc-900 dark:text-white">
                 {site.name}
@@ -51,30 +61,26 @@ export function SiteFooter() {
             <SocialLink
               href={`mailto:${site.email}`}
               label="Envoyer un e-mail"
-              icon="fa-solid fa-envelope"
-              colorClass="text-[#EA4335]"
+              icon="/gmail.svg"
             />
             {site.phones.map((p) => (
               <SocialLink
                 key={p.tel}
                 href={`tel:${p.tel}`}
                 label={`Appeler le ${p.display}`}
-                icon="fa-solid fa-square-phone"
-                colorClass="text-brand-600 dark:text-brand-400"
+                icon="/phone-apple-iphone.svg"
               />
             ))}
             <SocialLink
               href={whatsappLink()}
               label="Discuter sur WhatsApp"
-              icon="fa-brands fa-square-whatsapp"
-              colorClass="text-[#25D366]"
+              icon="/whatsapp.svg"
               external
             />
             <SocialLink
               href={site.facebook}
               label="Page Facebook LR Tech Center"
-              icon="fa-brands fa-square-facebook"
-              colorClass="text-[#1877F2]"
+              icon="/facebook.svg"
               external
             />
           </div>

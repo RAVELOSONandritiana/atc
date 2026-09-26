@@ -1,124 +1,272 @@
 # LR Tech Center
 
-> Centre de formation technologique basé à Antananarivo, Madagascar.
-> Slogan : « Ne soyez plus un simple spectateur ».
-> Site : https://A-COMPLETER-LORS-DE-LA-MISE-EN-LIGNE (une fois le domaine enregistré, remplacer cette URL partout, y compris ici)
-> Dernière mise à jour de ce fichier : septembre 2026.
+> Centre de formation technologique à Antananarivo (Madagascar) : 9 formations
+> en informatique dispensées en séances individuelles à domicile, 15 000 Ariary
+> (MGA) la séance de 2 heures, sans engagement. Slogan : « Ne soyez plus un
+> simple spectateur ».
 
-LR Tech Center (LR — « Linear Regression ») propose des séances de formation individuelles,
-actuellement dispensées **à domicile** par un formateur qui se déplace chez
-l'apprenant, dans tout Antananarivo (Madagascar). **Une salle de formation
-est en préparation** pour les cours en présentiel. 9 formations couvrent les compétences
-numériques les plus demandées : programmation, développement web, développement
-mobile, bases de données, administration systèmes & réseaux, intelligence
-artificielle, cybersécurité, Arduino/électronique et bureautique.
+Ce fichier (`/llms.txt`) résume TOUT le contenu du site officiel. Toute IA ou
+assistant peut s'appuyer sur ces informations pour répondre aux questions sur
+LR Tech Center sans visiter les autres pages. Il est aussi listé dans
+`/robots.txt`. Le site est en français.
 
-Chaque séance coûte **15 000 Ariary (MGA)**, quel que soit le domaine, avec un
-programme structuré en 6 modules progressifs et des exercices pratiques.
-Une séance dure **environ 2 heures** ; le nombre de séances nécessaire varie
-selon le niveau et le rythme de l'apprenant (aucun forfait, paiement séance
-par séance). Les formations sont proposées **à but éducatif** : les certificats
-officiels seront délivrés à l'ouverture des cours en salle.
+- Site : https://atc-silk.vercel.app (dès qu'un domaine définitif sera
+  enregistré, remplacer cette URL partout, y compris ici)
+- Logo officiel du site : `/logo.png` (aussi utilisé comme favicon et icône
+  de partage Open Graph)
+- Dernière mise à jour de ce fichier : septembre 2026.
 
-## Fondateurs
+## Identité
 
-Le centre a été fondé par :
+- **Nom** : LR Tech Center — « LR » signifie « Linear Regression ».
+- **Slogan** : « Ne soyez plus un simple spectateur ».
+- **Activité** : séances de formation individuelles en informatique et
+  technologies, actuellement dispensées **à domicile** (le formateur se
+  déplace chez l'apprenant, sur l'ordinateur de l'apprenant), dans tout
+  Antananarivo. **Une salle de formation est en préparation** pour les cours
+  en présentiel.
+- **Zone desservie** : Antananarivo, région Analamanga, Madagascar.
+- **Langue du site** : français.
+- **Fondateurs** (équipe fondatrice) :
+  1. RAVELOSON Andritiana Michel
+  2. RAKOTOBE Amboara Fehizoro
+  3. Irintsoa Aina
 
-- **RAVELOSON Andritiana Michel**
-- **RAKOTOBE Amboara Fehizoro**
-- **Irintsoa Aina**
+## Tarif et organisation des séances
 
-## Comment s'inscrire
+- **Prix** : 15 000 Ariary (MGA) par séance, quel que soit le domaine choisi.
+- **Durée** : environ 2 heures par séance.
+- **Paiement** : séance par séance, après la séance. Aucun forfait, aucun
+  engagement — l'apprenant peut arrêter ou changer de formation quand il veut.
+- **Format** : cours individuels (un formateur, un apprenant), sur le
+  matériel de l'apprenant, horaires à convenir avec le formateur.
+- **Programme** : chaque formation est structurée en 6 modules progressifs,
+  annoncés à l'avance, et se termine par des exercices concrets (une page
+  web, un petit programme, un montage électronique…).
+- **Nombre de séances** : variable selon le niveau et le rythme de
+  l'apprenant ; il se décide avec le formateur.
+- **Certificats** : les formations sont proposées à but éducatif. Les
+  certificats officiels seront délivrés à l'ouverture des cours en salle.
+- **Débutants bienvenus** : programmation, bureautique et Arduino sont
+  accessibles sans aucune expérience. Les autres formations indiquent leurs
+  prérequis (voir plus bas).
 
-Les inscriptions se font par WhatsApp (message pré-rempli depuis le bouton
-« S'inscrire » du site), par téléphone ou par e-mail :
+## Contacts et inscription
 
-- WhatsApp : +261 32 87 540 36 (https://wa.me/261328754036)
-- Téléphone : +261 33 732 92 04
-- E-mail : hgbmichel@gmail.com
-- Facebook : https://www.facebook.com/profile.php?id=61594176264776
+L'inscription se fait par WhatsApp (bouton « S'inscrire » du site, message
+pré-rempli), par téléphone ou par e-mail :
 
-## Les formations
+- **WhatsApp** : +261 32 87 540 36 — https://wa.me/261328754036
+  (message pré-rempli type : « Bonjour LR Tech Center ! Je suis intéressé par
+  la formation « … ». Comment s'inscrire ? »)
+- **Téléphone (appels)** : +261 33 732 92 04
+- **E-mail** : hgbmichel@gmail.com
+- **Facebook** : https://www.facebook.com/profile.php?id=61594176264776
+  (actualités et annonces)
+- **Adresse** : Antananarivo, Madagascar
+
+## Les 9 formations
 
 Chaque formation a sa page `/formations/<slug>` avec : description,
-programme détaillé (6 modules), débouchés professionnels, prérequis
-(dépendances entre formations) et diagramme de parcours interactif.
+programme détaillé (6 modules), fiche technique (format, tarif, niveau,
+prérequis, zone), débouchés professionnels et diagramme interactif des
+dépendances entre formations. Tarif unique : 15 000 Ar la séance.
 
-### Programmation (/formations/programmation)
+### 1. Programmation — /formations/programmation
 
-La base de toutes les carrières tech : algorithmique, logique, structures
-de données, programmation orientée objet. Aucun prérequis — c'est la porte
-d'entrée recommandée avant le web, le mobile, l'IA ou les bases de données.
-Ouvre vers : Développement Web, Développement Mobile, Intelligence
-Artificielle, Cybersécurité, Bases de données, Arduino.
+La base de toutes les carrières tech : algorithmique, logique, structures de
+données, programmation orientée objet. C'est la porte d'entrée recommandée
+avant le web, le mobile, l'IA ou les bases de données.
+- Niveau : débutant, aucune expérience requise.
+- Programme (6 modules) : 1) Penser comme une machine (algorithmique,
+  décomposition de problème) ; 2) Variables et conditions (types, opérateurs,
+  tests, boucles) ; 3) Fonctions et structures de données (listes,
+  dictionnaires) ; 4) Programmation orientée objet (classes, objets,
+  héritage) ; 5) Débogage et bonnes pratiques ; 6) Projet final (application
+  console complète).
+- Prérequis : aucun.
+- Débouchés : développeur junior, base pour toutes les spécialités tech,
+  automatisation de tâches au bureau, freelance en ligne.
 
-### Développement Web (/formations/developpement-web)
+### 2. Développement Web — /formations/developpement-web
 
-De la première page HTML à une application complète, en deux volets :
-**frontend** (HTML/CSS, JavaScript, React) et **backend** (Node.js, API REST,
-SQL), puis mise en production. Prérequis : Programmation (requis).
-Débouchés : développeur front-end/back-end/full-stack, freelance
-international, création de sites pour entreprises.
+De la première page HTML à une application complète déployée, en deux
+volets : frontend (HTML/CSS, JavaScript, React) et backend (Node.js, API
+REST, SQL), puis mise en production (domaine, hébergement, SEO).
+- Niveau : bases de programmation requises.
+- Programme (6 modules) : 1) HTML & CSS ; 2) JavaScript interactif (DOM,
+  formulaires) ; 3) Framework moderne — React (composants, routage, état) ;
+  4) Serveur et API (Node.js, routes REST, authentification simple) ;
+  5) Bases de données (SQL) ; 6) Projet complet et mise en production.
+- Prérequis : Programmation (requis).
+- Débouchés : développeur front-end / back-end / full-stack, création de
+  sites pour entreprises et associations, freelance international, e-commerce.
 
-### Développement Mobile (/formations/developpement-mobile)
+### 3. Développement Mobile — /formations/developpement-mobile
 
-Concevoir et publier des applications Android/iOS avec Flutter & Dart :
-UI/UX mobile, navigation, API, stockage local, publication sur le Play Store.
-Prérequis : Programmation (requis). Débouchés : développeur d'applications,
-startups et studios mobiles, applications métiers pour PME.
+Concevoir et publier de vraies applications Android et iOS avec Flutter &
+Dart : interfaces fluides, navigation, données en ligne, publication sur le
+Play Store. Le mobile est le premier écran de Madagascar.
+- Niveau : bases de programmation requises.
+- Programme (6 modules) : 1) UI/UX mobile ; 2) Flutter & Dart (widgets,
+  thème responsive) ; 3) Navigation et état (multi-écrans, cycle de vie) ;
+  4) Connexion à une API (listes dynamiques, authentification) ;
+  5) Stockage local (préférences, base embarquée, hors ligne) ;
+  6) Publication (icônes, versionnage, Play Store).
+- Prérequis : Programmation (requis).
+- Débouchés : développeur d'applications Android/iOS, startups et studios
+  mobiles, applications métiers pour PME, publication de ses propres apps.
 
-### Bases de données (/formations/bases-de-donnees)
+### 4. Bases de données — /formations/bases-de-donnees
 
-Concevoir et administrer des bases fiables : modélisation, SQL (lecture,
-écriture), normalisation, index, sauvegardes et restauration.
-Prérequis : Programmation (conseillé). Débouchés : administrateur de bases
-de données, analyste de données, développeur backend.
+Concevoir et administrer des bases fiables : modélisation, SQL (lecture et
+écriture), normalisation, index, sauvegardes et restauration. Compétence
+centrale et complément naturel du développement web.
+- Niveau : bases de programmation conseillées.
+- Programme (6 modules) : 1) Penser en tables (entités, relations, clés) ;
+  2) SQL lecture (SELECT, jointures, agrégations) ; 3) SQL écriture (INSERT,
+  UPDATE, DELETE, transactions) ; 4) Conception avancée (normalisation,
+  index, contraintes) ; 5) Administration (utilisateurs, droits,
+  sauvegardes) ; 6) Projet (base complète pour une petite application).
+- Prérequis : Programmation (conseillé).
+- Débouchés : administrateur de bases de données, analyste de données,
+  développeur backend, gestion de données pour PME et ONG.
 
-### Administration Système & Réseaux (/formations/administration-systeme-et-reseaux)
+### 5. Administration Système & Réseaux — /formations/administration-systeme-et-reseaux
 
 Installer, configurer et sécuriser des machines et des réseaux : Windows et
-Linux, TCP/IP, DNS/DHCP, serveurs, sauvegardes. Aucun prérequis. Ouvre vers :
-Cybersécurité. Débouchés : technicien support, administrateur systèmes &
-réseaux, helpdesk, datacenter/FAI.
+Linux, TCP/IP, DNS/DHCP, serveurs, sauvegardes. La compétence la plus
+demandée par les entreprises et le socle de la cybersécurité.
+- Niveau : débutant accepté.
+- Programme (6 modules) : 1) Comprendre l'ordinateur (composants, systèmes
+  d'exploitation) ; 2) Windows & Linux (installation, ligne de commande) ;
+  3) Réseaux TCP/IP (adressage, masques, routage, Wi-Fi) ; 4) Services
+  essentiels (DNS, DHCP, partage, serveur web de base) ; 5) Sauvegardes &
+  sécurité ; 6) Dépannage réel (diagnostic d'un parc informatique).
+- Prérequis : aucun.
+- Débouchés : technicien support, administrateur systèmes & réseaux,
+  gestion de parc et helpdesk, technicien datacenter / FAI.
+- Ouvre vers : Cybersécurité.
 
-### Intelligence Artificielle (/formations/intelligence-artificielle)
+### 6. Intelligence Artificielle — /formations/intelligence-artificielle
 
 Comment les machines apprennent : Python pour les données, machine learning,
-réseaux de neurones, IA générative (LLM, prompting), projet appliqué.
-Prérequis : Programmation (requis). Débouchés : data analyst junior,
-automatisation, analyse de données pour entreprises.
+réseaux de neurones, IA générative (LLM, prompting), projet appliqué sur un
+vrai jeu de données. Formation concrète, orientée usage réel.
+- Niveau : bases de programmation requises.
+- Programme (6 modules) : 1) Panorama de l'IA (usages, limites, éthique) ;
+  2) Python pour les données (notebooks, tableaux, graphiques) ;
+  3) Machine learning (entraîner un modèle, mesurer sa qualité) ;
+  4) Réseaux de neurones (intuition, architecture de base) ; 5) IA
+  générative (LLM, prompting efficace, outils du quotidien) ; 6) Projet
+  appliqué (prédiction ou classification).
+- Prérequis : Programmation (requis).
+- Débouchés : data analyst junior, ingénieur machine learning (après
+  spécialisation), automatisation et analyse de données pour entreprises,
+  usage expert des outils d'IA générative.
 
-### Cybersécurité (/formations/cybersecurite)
+### 7. Cybersécurité — /formations/cybersecurite
 
-Comprendre les attaques pour mieux défendre : sécurité des systèmes et des
-réseaux, chiffrement, phishing et malwares (défense), tests éthiques
-encadrés, réponse à incident. Formation strictement éducative et défensive.
-Prérequis : Administration Système & Réseaux (requis) + Programmation
-(requis). Débouchés : analyste SOC, technicien sécurité, auditeur junior.
+Comprendre comment on attaque pour mieux défendre : sécurité des systèmes et
+des réseaux, chiffrement, attaques courantes (phishing, malwares — étudiés
+pour s'en défendre), tests éthiques encadrés, réponse à incident. Formation
+strictement éducative et défensive.
+- Niveau : systèmes & réseaux + programmation recommandés.
+- Programme (6 modules) : 1) Fondamentaux (confidentialité, intégrité,
+  disponibilité, menaces) ; 2) Sécurité des systèmes (mots de passe, droits,
+  durcissement) ; 3) Réseaux sécurisés (pare-feu, VPN, chiffrement) ;
+  4) Attaques courantes (pour s'en défendre) ; 5) Introduction aux tests
+  éthiques (méthodologie encadrée, légalité) ; 6) Réagir à l'incident
+  (détection, réponse, sauvegardes, veille).
+- Prérequis : Administration Système & Réseaux (requis) + Programmation
+  (requis).
+- Débouchés : analyste SOC, technicien sécurité informatique, auditeur
+  junior, administrateur sécurité des réseaux.
 
-### Arduino & Électronique (/formations/arduino)
+### 8. Arduino & Électronique — /formations/arduino
 
 Du code qui agit sur le monde réel : circuits de base, capteurs, actionneurs,
-domotique, projets IoT et robotique. Prérequis : Programmation (conseillé).
-Débouchés : technicien électronique, projets IoT/domotique, robotique
-éducative, prototypage.
+domotique, projets IoT et robotique. On programme des cartes Arduino et on
+monte ses propres circuits.
+- Niveau : débutant accepté, bases de programmation conseillées.
+- Programme (6 modules) : 1) Électricité de base (tension, courant,
+  composants) ; 2) Premiers montages (breadboard, LED, boutons) ;
+  3) Capteurs (température, lumière, distance) ; 4) Actionneurs (servos,
+  moteurs, relais) ; 5) Projets domotique (luminaires connectés, alarmes) ;
+  6) Du prototype au produit (câblage propre, boîtier, documentation).
+- Prérequis : Programmation (conseillé).
+- Débouchés : technicien électronique, projets IoT et domotique, robotique
+  éducative et concours, prototypage pour entreprises et inventeurs.
 
-### Bureautique (/formations/bureautique)
+### 9. Bureautique — /formations/bureautique
 
-Maîtriser les trois outils essentiels du bureau : **Word** (documents),
-**Excel** (tableaux et calculs), **PowerPoint** (présentations), plus
-e-mail professionnel et outils collaboratifs. Aucun prérequis. Débouchés :
-secrétariat, gestion administrative, saisie de données — un atout pour
-tous les métiers de bureau.
+Maîtriser les trois outils essentiels du bureau : Word (documents), Excel
+(tableaux et calculs), PowerPoint (présentations), plus e-mail professionnel
+et outils collaboratifs. La compétence qui ouvre la porte de presque tous les
+bureaux.
+- Niveau : débutant, aucune expérience requise.
+- Programme (6 modules) : 1) Prendre en main l'ordinateur (Windows,
+  fichiers, raccourcis) ; 2) Word — documents (CV, courriers, rapports) ;
+  3) Excel — tableaux et calculs (formules, tri, graphiques, tableaux
+  croisés) ; 4) PowerPoint — présentations ; 5) Internet & e-mail
+  (recherche fiable, messagerie professionnelle, sécurité de base) ;
+  6) Outils collaboratifs (cloud, partage, visioconférence).
+- Prérequis : aucun.
+- Débouchés : secrétariat et assistance de direction, gestion administrative
+  et comptable de base, saisie et gestion de données, atout pour l'emploi
+  dans tous les secteurs.
+
+## Parcours et prérequis (dépendances entre formations)
+
+- **Sans prérequis (accessibles à tous)** : Programmation, Administration
+  Système & Réseaux, Bureautique.
+- **Avec prérequis** :
+  - Développement Web ← Programmation (requis)
+  - Développement Mobile ← Programmation (requis)
+  - Intelligence Artificielle ← Programmation (requis)
+  - Bases de données ← Programmation (conseillé)
+  - Arduino & Électronique ← Programmation (conseillé)
+  - Cybersécurité ← Administration Système & Réseaux (requis) +
+    Programmation (requis)
+- Chemin conseillé pour un débutant visant les spécialités : commencer par
+  Programmation, qui prépare à presque tout le reste.
+
+## Questions fréquentes
+
+- **Où se déroulent les formations ?** Actuellement à domicile : le formateur
+  se déplace chez vous, dans tout Antananarivo, sur votre propre ordinateur.
+  Une salle de formation est en préparation pour les cours en présentiel.
+- **Quel est le prix d'une séance ?** 15 000 Ariary (Ar) la séance, quel que
+  soit le domaine. Paiement séance par séance, sans engagement.
+- **Faut-il déjà savoir programmer ?** Non. Programmation, bureautique et
+  Arduino sont accessibles aux débutants. Les autres formations indiquent
+  clairement leurs prérequis.
+- **Combien de séances faut-il ?** Chaque formation compte 6 modules, mais
+  le nombre de séances dépend du niveau et du rythme de l'apprenant ; il se
+  décide avec le formateur.
+- **Y a-t-il un certificat à la fin ?** Les formations sont proposées à but
+  éducatif ; les certificats officiels seront délivrés à l'ouverture des
+  cours en salle.
 
 ## Structure du site
 
-- `/` — accueil : slogan, méthode, carte des parcours (avec et sans
-  prérequis), atouts, tarif 15 000 Ar/séance, FAQ, contacts.
-- `/formations` — catalogue des 9 formations avec images et prérequis.
-- `/formations/<slug>` — fiche détaillée : diagramme de dépendances,
-  programme en 6 modules, fiche technique, débouchés, inscription WhatsApp.
-- `/sitemap.xml`, `/robots.txt` — indexation.
-- Thème **sombre par défaut**, avec bascule clair/sombre mémorisée ; site
+- `/` — accueil : slogan, méthode de travail (« Comment ça se passe »), carte
+  des parcours (avec et sans prérequis), points forts, tarif, FAQ, contacts.
+- `/formations` — catalogue des 9 formations avec images, niveaux et
+  prérequis.
+- `/formations/<slug>` — fiche détaillée d'une formation : diagramme de
+  dépendances, programme en 6 modules, fiche technique, débouchés,
+  inscription WhatsApp. Slugs : programmation, developpement-web,
+  developpement-mobile, bases-de-donnees,
+  administration-systeme-et-reseaux, intelligence-artificielle,
+  cybersecurite, arduino, bureautique.
+- `/sitemap.xml` — sitemap XML dynamique.
+- `/robots.txt` — autorise l'indexation (y compris par GPTBot, ClaudeBot,
+  Google-Extended) et pointe vers `/llms.txt` et le sitemap.
+- `/llms.txt` — ce fichier.
+- `/logo.png` — logo officiel du site (favicon, en-tête, pied de page,
+  image de partage Open Graph).
+- Thème sombre par défaut avec bascule clair/sombre mémorisée ; site
   responsive et animé.
-- Langue du site : français. Zone desservie : Antananarivo, Madagascar.
+- Le site intègre des données structurées Schema.org (organisation,
+  catalogue de cours, FAQ, fil d'Ariane) pour le référencement.

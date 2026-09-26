@@ -141,3 +141,31 @@ Error: Cannot find module '~/components/brand-icons' imported from '/home/hashte
 11:42:52 AM [vite] (ssr) program reload
 11:43:09 AM [vite] (ssr) program reload
 11:54:46 AM [vite] (ssr) program reload
+12:11:25 PM [vite] (ssr) program reload
+12:11:29 PM [vite] (ssr) program reload
+12:20:42 PM [vite] (client) hmr update /app/components/site-footer.tsx
+12:20:42 PM [vite] (client) hmr update /app/components/site-footer.tsx
+12:20:42 PM [vite] (client) hmr update /app/components/site-footer.tsx, /app/app.css
+12:20:42 PM [vite] (ssr) page reload app/components/site-footer.tsx
+12:20:42 PM [vite] (ssr) program reload
+12:20:57 PM [vite] (client) hmr update /app/routes/home.tsx
+12:20:57 PM [vite] (client) hmr update /app/routes/home.tsx
+12:20:57 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+12:20:57 PM [vite] (ssr) page reload app/routes/home.tsx
+12:20:57 PM [vite] (ssr) program reload
+12:21:08 PM [vite] (client) hmr update /app/components/site-header.tsx
+12:21:08 PM [vite] (client) hmr update /app/components/site-header.tsx
+12:21:08 PM [vite] (client) hmr update /app/components/site-header.tsx, /app/app.css
+12:21:08 PM [vite] (ssr) page reload app/components/site-header.tsx
+12:21:08 PM [vite] (ssr) program reload
+12:21:08 PM [vite] (client) hmr update /app/root.tsx
+12:21:08 PM [vite] (client) hmr update /app/root.tsx
+12:21:08 PM [vite] (client) hmr update /app/root.tsx, /app/app.css
+12:21:08 PM [vite] (ssr) page reload app/root.tsx
+12:21:08 PM [vite] (ssr) program reload
+12:21:17 PM [vite] (client) hmr update /app/routes/home.tsx
+12:21:17 PM [vite] (client) hmr update /app/routes/home.tsx
+12:21:17 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+12:21:17 PM [vite] (ssr) page reload app/routes/home.tsx
+12:21:17 PM [vite] (ssr) program reload
+12:23:47 PM [vite] (ssr) program reload

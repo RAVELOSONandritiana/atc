@@ -90,9 +90,13 @@ export function SiteHeader() {
           className="group flex items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-xs font-bold text-white transition-colors group-hover:bg-brand-700">
-            LR
-          </span>
+          <img
+            src="/logo.png"
+            alt="Logo LR Tech Center"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-lg object-contain transition-colors group-hover:bg-brand-700/10"
+          />
           <span className="leading-tight">
             <span className="block text-sm font-bold tracking-tight text-zinc-900 dark:text-white">
               {site.name}
