@@ -7,7 +7,7 @@ export const site = {
   shortName: "ATC",
   slogan: "Ne soyez plus un simple spectateur",
   tagline:
-    "Formations technologiques à domicile à Antananarivo, Madagascar — programmation, web, mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique.",
+    "Formations technologiques à Antananarivo, Madagascar — programmation, web, mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique.",
 
   city: "Antananarivo",
   region: "Analamanga",

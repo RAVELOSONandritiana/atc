@@ -37,8 +37,8 @@ export function meta({ loaderData }: Route.MetaArgs) {
     return [{ title: `Formation introuvable — ${site.name}` }];
   }
   const { formation, origin } = loaderData;
-  const title = `Formation ${formation.name} à domicile — ${site.pricePerSession.toLocaleString("fr-FR")} ${site.currencyLabel} / séance | ${site.name}`;
-  const description = `${formation.tagline} ${formation.description.slice(0, 120)}… Programme complet, débouchés et prérequis. Séances à domicile dans tout Antananarivo.`;
+  const title = `Formation ${formation.name} — ${site.pricePerSession.toLocaleString("fr-FR")} ${site.currencyLabel} / séance | ${site.name}`;
+  const description = `${formation.tagline} ${formation.description.slice(0, 120)}… Programme complet, débouchés et prérequis. Séances à Antananarivo.`;
 
   return [
     { title },
@@ -109,7 +109,7 @@ export default function FormationDetail({
       "@type": "Offer",
       price: site.pricePerSession,
       priceCurrency: site.currency,
-      category: "Séance à domicile",
+      category: "Séance individuelle",
     },
   };
 
@@ -212,7 +212,7 @@ export default function FormationDetail({
               <div className="animate-fade-up mx-auto w-full max-w-sm">
                 <div className="rounded-lg border border-white/20 bg-zinc-900/60 p-7 backdrop-blur">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-400">
-                    Séance à domicile
+                    Séance individuelle
                   </p>
                   <p className="mt-3">
                     <span className="text-4xl font-bold text-white">
@@ -227,7 +227,7 @@ export default function FormationDetail({
                       <span aria-hidden="true" className="text-emerald-400">
                         <i className="fa-solid fa-check" />
                       </span>
-                      Le formateur se déplace chez vous
+                      Formateur dédié, à votre rythme
                     </li>
                     <li className="flex items-start gap-2">
                       <span aria-hidden="true" className="text-emerald-400">
@@ -239,7 +239,7 @@ export default function FormationDetail({
                       <span aria-hidden="true" className="text-emerald-400">
                         <i className="fa-solid fa-check" />
                       </span>
-                      Antananarivo, à votre domicile
+                      Antananarivo — domicile ou salle
                     </li>
                   </ul>
                 </div>
@@ -326,7 +326,7 @@ export default function FormationDetail({
                     <div className="flex items-start justify-between gap-4">
                       <dt className="text-zinc-500 dark:text-zinc-400">Format</dt>
                       <dd className="text-right font-semibold text-zinc-900 dark:text-white">
-                        À domicile
+                        Individuel — salle en préparation
                       </dd>
                     </div>
                     <div className="flex items-start justify-between gap-4">

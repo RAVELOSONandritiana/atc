@@ -11,7 +11,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const origin = loaderData?.origin ?? "http://localhost:5173";
   const title = `Nos formations — ${site.name}`;
   const description =
-    "9 formations technologiques à domicile à Antananarivo : programmation, développement web et mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique. 15 000 Ar la séance.";
+    "9 formations technologiques à Antananarivo : programmation, développement web et mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique. 15 000 Ar la séance.";
 
   return [
     { title },
@@ -68,7 +68,7 @@ export default function FormationsIndex({
               Choisissez votre compétence
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-zinc-300">
-              9 formations à domicile, {site.pricePerSession.toLocaleString("fr-FR")}{" "}
+              9 formations, {site.pricePerSession.toLocaleString("fr-FR")}{" "}
               {site.currencyLabel} la séance. Chacune affiche son programme
               complet, ses débouchés et son parcours de dépendances.
             </p>
