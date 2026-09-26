@@ -38,7 +38,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   }
   const { formation, origin } = loaderData;
   const title = `Formation ${formation.name} à domicile — ${site.pricePerSession.toLocaleString("fr-FR")} ${site.currencyLabel} / séance | ${site.name}`;
-  const description = `${formation.tagline} ${formation.description.slice(0, 120)}… Programme complet, débouchés et prérequis. Séances à domicile à Alasora, Antananarivo.`;
+  const description = `${formation.tagline} ${formation.description.slice(0, 120)}… Programme complet, débouchés et prérequis. Séances à domicile dans tout Antananarivo.`;
 
   return [
     { title },
@@ -140,7 +140,7 @@ export default function FormationDetail({
             width={1600}
             height={900}
             fetchPriority="high"
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
           />
           <div
             aria-hidden="true"
@@ -239,7 +239,7 @@ export default function FormationDetail({
                       <span aria-hidden="true" className="text-emerald-400">
                         <i className="fa-solid fa-check" />
                       </span>
-                      Alasora & tout Antananarivo
+                      Antananarivo, à votre domicile
                     </li>
                   </ul>
                 </div>
@@ -290,8 +290,8 @@ export default function FormationDetail({
                   Programme détaillé
                 </h2>
                 <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
-                  6 modules progressifs — comptez environ une séance par
-                  module, adaptée à votre rythme.
+                  6 modules progressifs, à travailler au rythme qui vous
+                  convient — le nombre de séances s'adapte à votre niveau.
                 </p>
               </Reveal>
               <ol className="mt-8 space-y-4">

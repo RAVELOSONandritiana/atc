@@ -7,13 +7,13 @@ export const site = {
   shortName: "ATC",
   slogan: "Ne soyez plus un simple spectateur",
   tagline:
-    "Formations technologiques à domicile à Alasora, Antananarivo — programmation, web, mobile, IA, cybersécurité, réseaux, Arduino et bureautique.",
+    "Formations technologiques à domicile à Antananarivo, Madagascar — programmation, web, mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique.",
 
-  city: "Alasora",
+  city: "Antananarivo",
   region: "Analamanga",
   country: "Madagascar",
   addressLocality: "Antananarivo",
-  fullAddress: "Alasora, Antananarivo, Madagascar",
+  fullAddress: "Antananarivo, Madagascar",
 
   /** Prix d'une séance de formation à domicile, en Ariary. */
   pricePerSession: 15_000,
@@ -21,18 +21,16 @@ export const site = {
   currencyLabel: "Ar",
 
   email: "hgbmichel@gmail.com",
-  phones: [
-    { display: "+261 33 73 292 04", tel: "+261337329204" },
-    { display: "+261 38 32 062 18", tel: "+261383206218" },
-  ],
+  /** L'unique numéro d'appel et de WhatsApp utilisé par le centre. */
+  phones: [{ display: "+261 33 732 92 04", tel: "+261337329204" }],
   whatsapp: {
     /** Numéro affiché. */
-    display: "+261 32 87 543 06",
+    display: "+261 32 87 540 36",
     /** Format international sans « + » pour les liens wa.me. */
-    number: "261328754306",
+    number: "261328754036",
   },
   facebook:
-    "https://www.facebook.com/profile.php?id=61552273513133",
+    "https://www.facebook.com/profile.php?id=61594176264776",
 
   /**
    * Domaine définitif, à compléter lors de la mise en ligne
@@ -45,6 +43,13 @@ export const site = {
   /** Note légale affichée sur chaque fiche formation. */
   disclaimer:
     "Formations proposées à but éducatif. Les certificats officiels seront délivrés à l'ouverture des cours en salle.",
+
+  /** Équipe fondatrice du centre. */
+  founders: [
+    "RAVELOSON Andritiana Michel",
+    "RAKOTOBE Amboara Fehizoro",
+    "Irintsoa Aina",
+  ],
 } as const;
 
 /** Origine canonique du site : domaine configuré ou URL reçue par le serveur. */

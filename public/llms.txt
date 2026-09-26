@@ -1,30 +1,39 @@
 # Alasora Tech Center
 
-> Centre de formation technologique à domicile, situé à Alasora (Antananarivo, Madagascar).
+> Centre de formation technologique à domicile, basé à Antananarivo, Madagascar.
 > Slogan : « Ne soyez plus un simple spectateur ».
 > Site : https://A-COMPLETER-LORS-DE-LA-MISE-EN-LIGNE (une fois le domaine enregistré, remplacer cette URL partout, y compris ici)
 
 Alasora Tech Center (ATC) propose des séances de formation individuelles,
 dispensées **à domicile** par un formateur qui se déplace chez l'apprenant,
-à Alasora et dans tout Antananarivo (Madagascar). Les 8 formations couvrent
-les compétences numériques les plus demandées : programmation, développement
-web et mobile, administration systèmes & réseaux, intelligence artificielle,
-cybersécurité, Arduino/électronique et bureautique.
+dans tout Antananarivo (Madagascar). 9 formations couvrent les compétences
+numériques les plus demandées : programmation, développement web, développement
+mobile, bases de données, administration systèmes & réseaux, intelligence
+artificielle, cybersécurité, Arduino/électronique et bureautique.
 
 Chaque séance coûte **15 000 Ariary (MGA)**, quel que soit le domaine, avec un
-programme structuré en 6 modules progressifs et un vrai projet pratique.
-Les formations sont proposées **à but éducatif** : les certificats officiels
-seront délivrés à l'ouverture des cours en salle.
+programme structuré en 6 modules progressifs et des exercices pratiques.
+Le nombre de séances nécessaire varie selon le niveau et le rythme de
+l'apprenant. Les formations sont proposées **à but éducatif** : les certificats
+officiels seront délivrés à l'ouverture des cours en salle.
+
+## Fondateurs
+
+Le centre a été fondé par :
+
+- **RAVELOSON Andritiana Michel**
+- **RAKOTOBE Amboara Fehizoro**
+- **Irintsoa Aina**
 
 ## Comment s'inscrire
 
 Les inscriptions se font par WhatsApp (message pré-rempli depuis le bouton
 « S'inscrire » du site), par téléphone ou par e-mail :
 
-- WhatsApp : +261 32 87 543 06 (https://wa.me/261328754306)
-- Téléphone : +261 33 73 292 04 · +261 38 32 062 18
+- WhatsApp : +261 32 87 540 36 (https://wa.me/261328754036)
+- Téléphone : +261 33 732 92 04
 - E-mail : hgbmichel@gmail.com
-- Facebook : https://www.facebook.com/profile.php?id=61552273513133
+- Facebook : https://www.facebook.com/profile.php?id=61594176264776
 
 ## Les formations
 
@@ -36,16 +45,17 @@ programme détaillé (6 modules), débouchés professionnels, prérequis
 
 La base de toutes les carrières tech : algorithmique, logique, structures
 de données, programmation orientée objet. Aucun prérequis — c'est la porte
-d'entrée recommandée avant le web, le mobile ou l'IA. Ouvre vers :
-Développement Web, Développement Mobile, Intelligence Artificielle,
-Cybersécurité, Arduino.
+d'entrée recommandée avant le web, le mobile, l'IA ou les bases de données.
+Ouvre vers : Développement Web, Développement Mobile, Intelligence
+Artificielle, Cybersécurité, Bases de données, Arduino.
 
 ### Développement Web (/formations/developpement-web)
 
-De la première page HTML à une application complète : HTML/CSS, JavaScript,
-React, API REST, bases de données, mise en production. Prérequis :
-Programmation (requis). Débouchés : développeur front-end/back-end/full-stack,
-freelance international, création de sites pour entreprises.
+De la première page HTML à une application complète, en deux volets :
+**frontend** (HTML/CSS, JavaScript, React) et **backend** (Node.js, API REST,
+SQL), puis mise en production. Prérequis : Programmation (requis).
+Débouchés : développeur front-end/back-end/full-stack, freelance
+international, création de sites pour entreprises.
 
 ### Développement Mobile (/formations/developpement-mobile)
 
@@ -53,6 +63,13 @@ Concevoir et publier des applications Android/iOS avec Flutter & Dart :
 UI/UX mobile, navigation, API, stockage local, publication sur le Play Store.
 Prérequis : Programmation (requis). Débouchés : développeur d'applications,
 startups et studios mobiles, applications métiers pour PME.
+
+### Bases de données (/formations/bases-de-donnees)
+
+Concevoir et administrer des bases fiables : modélisation, SQL (lecture,
+écriture), normalisation, index, sauvegardes et restauration.
+Prérequis : Programmation (conseillé). Débouchés : administrateur de bases
+de données, analyste de données, développeur backend.
 
 ### Administration Système & Réseaux (/formations/administration-systeme-et-reseaux)
 
@@ -85,18 +102,19 @@ Débouchés : technicien électronique, projets IoT/domotique, robotique
 
 ### Bureautique (/formations/bureautique)
 
-Maîtriser l'ordinateur au quotidien : traitement de texte, tableur (Excel),
-présentations, e-mail professionnel, outils collaboratifs. Aucun prérequis.
-Débouchés : secrétariat, gestion administrative, saisie de données — un
-atout pour tous les métiers de bureau.
+Maîtriser les trois outils essentiels du bureau : **Word** (documents),
+**Excel** (tableaux et calculs), **PowerPoint** (présentations), plus
+e-mail professionnel et outils collaboratifs. Aucun prérequis. Débouchés :
+secrétariat, gestion administrative, saisie de données — un atout pour
+tous les métiers de bureau.
 
 ## Structure du site
 
-- `/` — accueil : slogan, méthode, carte des parcours (niveaux 1 et 2),
-  atouts, tarif 15 000 Ar/séance, FAQ, contacts.
-- `/formations` — catalogue des 8 formations avec images et prérequis.
+- `/` — accueil : slogan, méthode, carte des parcours (avec et sans
+  prérequis), atouts, tarif 15 000 Ar/séance, FAQ, contacts.
+- `/formations` — catalogue des 9 formations avec images et prérequis.
 - `/formations/<slug>` — fiche détaillée : diagramme de dépendances,
   programme en 6 modules, fiche technique, débouchés, inscription WhatsApp.
 - `/sitemap.xml`, `/robots.txt` — indexation.
 - Thème clair/sombre avec bascule ; site responsive et animé.
-- Langue du site : français. Zone desservie : Alasora et Antananarivo.
+- Langue du site : français. Zone desservie : Antananarivo, Madagascar.

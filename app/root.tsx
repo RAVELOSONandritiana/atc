@@ -50,9 +50,10 @@ export function headers(): HeadersInit {
 
 /**
  * Applique le thème enregistré AVANT le premier rendu — aucun flash
- * de mauvais thème, aucune classe sur le serveur.
+ * de mauvais thème. Le thème par défaut est sombre : seul un choix
+ * explicite « light » bascule en clair.
  */
-const themeScript = `(function(){try{var t=localStorage.getItem("theme");var d=window.matchMedia("(prefers-color-scheme: dark)").matches;if(t==="dark"||(!t&&d))document.documentElement.classList.add("dark");}catch(e){}})();`;
+const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"){document.documentElement.classList.add("dark");}}catch(e){document.documentElement.classList.add("dark");}})();`;
 
 /** Données structurées : organisation + contacts (SEO). */
 const orgJsonLd = {

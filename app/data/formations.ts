@@ -4,6 +4,7 @@ export type FormationSlug =
   | "programmation"
   | "developpement-web"
   | "developpement-mobile"
+  | "bases-de-donnees"
   | "administration-systeme-et-reseaux"
   | "intelligence-artificielle"
   | "cybersecurite"
@@ -97,7 +98,7 @@ export const formations: Formation[] = [
     icon: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
     tagline: "Créez des sites et applications pour le monde entier.",
     description:
-      "De la première page HTML à une application web complète : design responsive, interactivité JavaScript, frameworks modernes, connexion à une API et mise en ligne. Un métier praticable en télétravail depuis Madagascar.",
+      "De la première page HTML à une application complète : design responsive, interactivité JavaScript, framework moderne, puis serveur, API et base de données. Deux volets — frontend et backend — pour viser le métier de développeur full-stack.",
     level: "Bases de programmation requises",
     keywords: [
       "formation développement web Madagascar",
@@ -107,28 +108,28 @@ export const formations: Formation[] = [
     ],
     program: [
       {
-        title: "HTML & CSS",
+        title: "Volet frontend · HTML & CSS",
         detail: "Structurer une page et la rendre belle sur tout écran.",
       },
       {
-        title: "JavaScript interactif",
+        title: "Volet frontend · JavaScript interactif",
         detail: "Événements, manipulation du DOM, formulaires vivants.",
       },
       {
-        title: "Un framework moderne",
+        title: "Volet frontend · Un framework moderne",
         detail: "Composants, routage et état avec React.",
       },
       {
-        title: "API et données",
-        detail: "Consommer une API REST, authentification simple.",
+        title: "Volet backend · Serveur et API",
+        detail: "Node.js, routes REST, authentification simple.",
       },
       {
-        title: "Bases de données",
-        detail: "Stocker et retrouver l'information proprement.",
+        title: "Volet backend · Bases de données",
+        detail: "Modéliser, stocker et retrouver l'information (SQL).",
       },
       {
-        title: "Mise en production",
-        detail: "Nom de domaine, hébergement, bonnes pratiques SEO.",
+        title: "Projet complet et mise en production",
+        detail: "Une application full-stack déployée : domaine, hébergement, SEO.",
       },
     ],
     outcomes: [
@@ -139,8 +140,61 @@ export const formations: Formation[] = [
     ],
     prerequisites: [{ slug: "programmation", required: true }],
     image: {
-      id: "1515879218367-8466d910aaa4",
-      alt: "Développement web : code HTML et CSS à l'écran",
+      id: "1547658719-da2b51169166",
+      alt: "Ordinateur portable affichant du code de développement web",
+    },
+  },
+  {
+    slug: "bases-de-donnees",
+    name: "Bases de données",
+    shortName: "Bases de données",
+    icon: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/>',
+    tagline: "Bien stocker l'information, la colonne vertébrale de tout système.",
+    description:
+      "Concevez des bases de données fiables : modélisation, SQL, requêtes avancées, optimisation et sauvegardes. Une compétence centrale, demandée par toutes les organisations qui gèrent des données — et le complément naturel du développement web.",
+    level: "Bases de programmation conseillées",
+    keywords: [
+      "formation SQL Madagascar",
+      "cours bases de données MySQL Antananarivo",
+      "modélisation de données",
+      "administration PostgreSQL",
+    ],
+    program: [
+      {
+        title: "Penser en tables",
+        detail: "Entités, relations, clés primaires et étrangères.",
+      },
+      {
+        title: "SQL · lecture",
+        detail: "SELECT, jointures, agrégations, tri et filtres.",
+      },
+      {
+        title: "SQL · écriture",
+        detail: "INSERT, UPDATE, DELETE, transactions.",
+      },
+      {
+        title: "Conception avancée",
+        detail: "Normalisation, index, contraintes d'intégrité.",
+      },
+      {
+        title: "Administration",
+        detail: "Utilisateurs, droits, sauvegardes et restauration.",
+      },
+      {
+        title: "Projet",
+        detail: "Base complète pour une petite application réelle.",
+      },
+    ],
+    outcomes: [
+      "Administrateur de bases de données",
+      "Analyste de données",
+      "Développeur backend (complément direct)",
+      "Gestion de données pour PME et ONG",
+    ],
+    prerequisites: [{ slug: "programmation", required: false }],
+    image: {
+      id: "1489436969537-cf0c1dc69cba",
+      alt: "Serveur de base de données et câblage réseau en salle informatique",
     },
   },
   {
@@ -415,7 +469,7 @@ export const formations: Formation[] = [
     icon: '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',
     tagline: "L'ordinateur maîtrisé, un atout pour chaque métier.",
     description:
-      "Devenez autonome et rapide sur ordinateur : documents, tableaux de calcul, présentations, e-mails professionnels et outils collaboratifs. La compétence qui ouvre la porte de presque tous les bureaux.",
+      "Devenez autonome sur les trois outils du bureau : Word pour les documents, Excel pour les tableaux et les calculs, PowerPoint pour les présentations. Avec la messagerie et les outils en ligne, la compétence qui ouvre la porte de presque tous les bureaux.",
     level: "Débutant — aucune expérience requise",
     keywords: [
       "formation bureautique Madagascar",
@@ -428,20 +482,20 @@ export const formations: Formation[] = [
         detail: "Windows, fichiers, dossiers, raccourcis utiles.",
       },
       {
-        title: "Traitement de texte",
-        detail: "Documents propres : CV, courriers, rapports.",
+        title: "Word · documents",
+        detail: "CV, courriers, rapports : mise en forme propre.",
       },
       {
-        title: "Tableur",
-        detail: "Formules, tri, tableaux croisés, budgets.",
+        title: "Excel · tableaux et calculs",
+        detail: "Formules, tri, graphiques, tableaux croisés.",
       },
       {
-        title: "Présentations",
+        title: "PowerPoint · présentations",
         detail: "Diapositives efficaces pour convaincre.",
       },
       {
         title: "Internet & e-mail",
-        detail: "Recherche fiable, messagerie pro, sécurité de base.",
+        detail: "Recherche fiable, messagerie professionnelle, sécurité de base.",
       },
       {
         title: "Outils collaboratifs",

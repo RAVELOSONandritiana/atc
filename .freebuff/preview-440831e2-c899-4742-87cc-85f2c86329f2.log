@@ -5,99 +5,91 @@
 [restart] Relaunching with NODE_OPTIONS: --conditions=development
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
-11:24:53 PM [vite] (ssr) connected.
-11:26:55 PM [vite] (client) hmr update /app/components/roadmap.tsx
-11:26:55 PM [vite] (client) hmr update /app/components/roadmap.tsx
-11:26:55 PM [vite] (client) hmr update /app/app.css, /app/components/roadmap.tsx
-11:26:55 PM [vite] (ssr) page reload app/components/roadmap.tsx
-11:26:55 PM [vite] (ssr) program reload
-11:36:52 PM [vite] (ssr) program reload
-11:44:29 PM [vite] (client) hmr update /app/routes/home.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
-11:44:29 PM [vite] (client) hmr update /app/routes/home.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
-11:44:29 PM [vite] (client) hmr update /app/routes/home.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx, /app/app.css
-11:44:29 PM [vite] (ssr) page reload app/data/formations.ts
-11:44:29 PM [vite] (ssr) program reload
-11:44:44 PM [vite] (client) hmr update /app/routes/home.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
-11:44:44 PM [vite] (client) hmr update /app/routes/home.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
-11:44:44 PM [vite] (client) hmr update /app/routes/home.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx, /app/app.css
-11:44:44 PM [vite] (ssr) page reload app/data/formations.ts
-11:44:44 PM [vite] (ssr) program reload
-11:45:47 PM [vite] (client) hmr update /app/app.css
-11:45:47 PM [vite] (client) hmr update /app/app.css
-11:45:47 PM [vite] (client) hmr update /app/app.css
-11:45:47 PM [vite] (ssr) hmr update /app/app.css
-11:51:49 PM [vite] (client) hmr update /app/root.tsx
-11:51:49 PM [vite] (client) hmr update /app/root.tsx
-11:51:49 PM [vite] (client) hmr update /app/root.tsx, /app/app.css
-11:51:49 PM [vite] (ssr) page reload app/root.tsx
-11:51:49 PM [vite] (ssr) program reload
-11:52:30 PM [vite] (client) hmr update /app/components/site-footer.tsx
-11:52:30 PM [vite] (client) hmr update /app/components/site-footer.tsx
-11:52:30 PM [vite] (client) hmr update /app/components/site-footer.tsx, /app/app.css
-11:52:30 PM [vite] (ssr) page reload app/components/site-footer.tsx
-11:52:30 PM [vite] (ssr) program reload
-11:53:05 PM [vite] (client) hmr update /app/components/site-footer.tsx
-11:53:05 PM [vite] (client) hmr update /app/components/site-footer.tsx
-11:53:05 PM [vite] (client) hmr update /app/components/site-footer.tsx, /app/app.css
-11:53:05 PM [vite] (ssr) page reload app/components/site-footer.tsx
-11:53:05 PM [vite] (ssr) program reload
-11:53:26 PM [vite] (client) hmr update /app/components/site-header.tsx
-11:53:26 PM [vite] (client) hmr update /app/components/site-header.tsx
-11:53:26 PM [vite] (client) hmr update /app/components/site-header.tsx, /app/app.css
-11:53:26 PM [vite] (ssr) page reload app/components/site-header.tsx
-11:53:26 PM [vite] (ssr) program reload
-11:53:36 PM [vite] (client) hmr update /app/components/roadmap.tsx
-11:53:36 PM [vite] (client) hmr update /app/components/roadmap.tsx
-11:53:36 PM [vite] (client) hmr update /app/app.css, /app/components/roadmap.tsx
-11:53:36 PM [vite] (ssr) page reload app/components/roadmap.tsx
-11:53:36 PM [vite] (ssr) program reload
-11:55:27 PM [vite] (client) hmr update /app/routes/home.tsx
-11:55:27 PM [vite] (client) hmr update /app/routes/home.tsx
-11:55:27 PM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
-11:55:27 PM [vite] (ssr) page reload app/routes/home.tsx
-11:55:27 PM [vite] (ssr) program reload
-11:55:43 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:55:43 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:55:43 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
-11:55:43 PM [vite] (ssr) page reload app/routes/formations._index.tsx
-11:55:43 PM [vite] (ssr) program reload
-11:55:54 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:55:54 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:55:54 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
-11:55:54 PM [vite] (ssr) page reload app/routes/formations._index.tsx
-11:55:54 PM [vite] (ssr) program reload
-11:56:28 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:56:28 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:56:28 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
-11:56:28 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
-11:56:28 PM [vite] (ssr) program reload
-11:56:39 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:56:39 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:56:39 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
-11:56:39 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
-11:56:39 PM [vite] (ssr) program reload
-11:57:14 PM [vite] (client) hmr update /app/components/roadmap.tsx
-11:57:14 PM [vite] (client) hmr update /app/components/roadmap.tsx
-11:57:14 PM [vite] (client) hmr update /app/app.css, /app/components/roadmap.tsx
-11:57:14 PM [vite] (ssr) page reload app/components/roadmap.tsx
-11:57:14 PM [vite] (ssr) program reload
-11:57:14 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:57:14 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:57:14 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
-11:57:14 PM [vite] (ssr) page reload app/routes/formations._index.tsx
-11:57:14 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:57:14 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:57:14 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
-11:57:14 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
-11:57:14 PM [vite] (ssr) program reload
-11:57:14 PM [vite] (ssr) program reload
-11:57:29 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:57:29 PM [vite] (client) hmr update /app/routes/formations._index.tsx
-11:57:29 PM [vite] (client) hmr update /app/app.css, /app/routes/formations._index.tsx
-11:57:29 PM [vite] (ssr) page reload app/routes/formations._index.tsx
-11:57:29 PM [vite] (ssr) program reload
-11:57:38 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:57:38 PM [vite] (client) hmr update /app/routes/formations.$slug.tsx
-11:57:38 PM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
-11:57:38 PM [vite] (ssr) page reload app/routes/formations.$slug.tsx
-11:57:38 PM [vite] (ssr) program reload
+11:00:24 AM [vite] (ssr) connected.
+11:02:48 AM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:02:48 AM [vite] (client) hmr update /app/routes/formations.$slug.tsx
+11:02:48 AM [vite] (client) hmr update /app/app.css, /app/routes/formations.$slug.tsx
+11:02:48 AM [vite] (ssr) page reload app/routes/formations.$slug.tsx
+11:02:48 AM [vite] (ssr) program reload
+11:11:26 AM [vite] (client) hmr update /app/components/site-footer.tsx
+11:11:26 AM [vite] (client) hmr update /app/components/site-footer.tsx
+11:11:26 AM [vite] (client) hmr update /app/components/site-footer.tsx, /app/app.css
+11:11:26 AM [vite] (ssr) page reload app/components/site-footer.tsx
+11:11:26 AM [vite] (ssr) program reload
+11:11:40 AM [vite] (client) hmr update /app/root.tsx
+11:11:40 AM [vite] (client) hmr update /app/root.tsx
+11:11:40 AM [vite] (client) hmr update /app/root.tsx, /app/app.css
+11:11:40 AM [vite] (ssr) page reload app/root.tsx
+11:11:40 AM [vite] (ssr) program reload
+11:11:40 AM [vite] (client) hmr update /app/components/brand-icons.tsx
+11:11:40 AM [vite] (client) hmr update /app/components/brand-icons.tsx
+11:11:40 AM [vite] (client) page reload app/components/brand-icons.tsx
+11:11:40 AM [vite] (ssr) page reload app/components/brand-icons.tsx
+11:11:40 AM [vite] (ssr) program reload
+11:11:40 AM [vite] (ssr) An error happened during full reload
+Failed to load url /app/components/brand-icons.tsx (resolved id: /home/hashterx/front_test/app/components/brand-icons.tsx) in /home/hashterx/front_test/app/routes/home.tsx. Does the file exist?
+Error: Failed to load url /app/components/brand-icons.tsx (resolved id: /home/hashterx/front_test/app/components/brand-icons.tsx) in /home/hashterx/front_test/app/routes/home.tsx. Does the file exist?
+    at loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19623:31)
+    at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+    at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+11:11:40 AM [vite] Internal server error: Failed to load url /app/components/brand-icons.tsx (resolved id: /home/hashterx/front_test/app/components/brand-icons.tsx) in /home/hashterx/front_test/app/routes/home.tsx. Does the file exist?
+      at loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19623:31)
+      at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+      at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+      at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+11:11:40 AM [vite] Internal server error: Failed to load url /app/components/brand-icons.tsx (resolved id: /home/hashterx/front_test/app/components/brand-icons.tsx) in /home/hashterx/front_test/app/routes/home.tsx. Does the file exist?
+      at loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19623:31)
+      at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+      at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+      at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+11:11:40 AM [react-router] Config saved
+11:11:40 AM [vite] Internal server error: Failed to load url /app/components/brand-icons.tsx (resolved id: /home/hashterx/front_test/app/components/brand-icons.tsx) in /home/hashterx/front_test/app/routes/home.tsx. Does the file exist?
+      at loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19623:31)
+      at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+      at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+      at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+11:11:40 AM [vite] Internal server error: Failed to load url /app/components/brand-icons.tsx (resolved id: /home/hashterx/front_test/app/components/brand-icons.tsx) in /home/hashterx/front_test/app/routes/home.tsx. Does the file exist?
+      at loadAndTransform (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:19623:31)
+      at async fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35529:15)
+      at async handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:21)
+      at async EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:13)
+11:12:14 AM [vite] (client) hmr update /app/routes/home.tsx
+11:12:14 AM [vite] (client) hmr update /app/routes/home.tsx
+11:12:14 AM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+11:12:14 AM [vite] (ssr) page reload app/routes/home.tsx
+11:12:14 AM [vite] (ssr) program reload
+11:12:14 AM [vite] (ssr) An error happened during full reload
+Cannot find module '~/components/brand-icons' imported from '/home/hashterx/front_test/app/routes/home.tsx'
+Error: Cannot find module '~/components/brand-icons' imported from '/home/hashterx/front_test/app/routes/home.tsx'
+    at fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35516:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:36385:10)
+    at fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:36318:17)
+    at handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:19)
+    at EventEmitter.emit (node:events:509:28)
+    at Object.send (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:15395:37)
+    at Object.invoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/module-runner.js:600:31)
+    at Object.invoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/module-runner.js:653:31)
+    at ModuleRunner.getModuleInformation (file:///home/hashterx/front_test/node_modules/vite/dist/node/module-runner.js:1210:28)
+11:12:14 AM [vite] Internal server error: Cannot find module '~/components/brand-icons' imported from '/home/hashterx/front_test/app/routes/home.tsx'
+      at fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:35516:32)
+      at RunnableDevEnvironment.fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:36385:10)
+      at fetchModule (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:36318:17)
+      at handleInvoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24774:27)
+      at EventEmitter.listenerForInvokeHandler (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:24829:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///home/hashterx/front_test/node_modules/vite/dist/node/chunks/node.js:15395:37)
+      at Object.invoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/module-runner.js:600:31)
+      at Object.invoke (file:///home/hashterx/front_test/node_modules/vite/dist/node/module-runner.js:653:31)
+      at ModuleRunner.getModuleInformation (file:///home/hashterx/front_test/node_modules/vite/dist/node/module-runner.js:1210:28)
+11:12:36 AM [vite] (client) hmr update /app/routes/home.tsx
+11:12:36 AM [vite] (client) hmr update /app/routes/home.tsx
+11:12:36 AM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+11:12:36 AM [vite] (ssr) page reload app/routes/home.tsx
+11:12:36 AM [vite] (ssr) program reload
+11:13:51 AM [vite] (client) hmr update /app/routes/home.tsx
+11:13:51 AM [vite] (client) hmr update /app/routes/home.tsx
+11:13:51 AM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+11:13:51 AM [vite] (ssr) page reload app/routes/home.tsx
+11:13:51 AM [vite] (ssr) program reload

@@ -98,7 +98,7 @@ export function SiteHeader() {
               {site.name}
             </span>
             <span className="block text-[11px] text-zinc-500 dark:text-zinc-400">
-              Alasora · Antananarivo
+              Antananarivo, Madagascar
             </span>
           </span>
         </Link>

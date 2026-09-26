@@ -2,22 +2,11 @@ import { Link } from "react-router";
 import { formations } from "~/data/formations";
 import { site, whatsappLink } from "~/data/site";
 
-/**
- * Icônes Font Awesome (CDN, chargé dans root.tsx) avec les couleurs
- * officielles des plateformes.
- */
-const brandColors = {
-  facebook: "#1877F2",
-  whatsapp: "#25D366",
-  email: "#EA4335",
-  phone: "#4F46E5",
-} as const;
-
 function SocialLink(props: {
   href: string;
   label: string;
   icon: string;
-  color: string;
+  colorClass: string;
   external?: boolean;
 }) {
   return (
@@ -26,11 +15,10 @@ function SocialLink(props: {
       aria-label={props.label}
       title={props.label}
       {...(props.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-200 bg-white transition hover:-translate-y-0.5 hover:border-zinc-300 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-600"
+      className="inline-flex items-center justify-center transition hover:-translate-y-0.5"
     >
       <i
-        className={`${props.icon} text-lg leading-none`}
-        style={{ color: props.color }}
+        className={`${props.icon} ${props.colorClass} text-2xl`}
         aria-hidden="true"
       />
     </a>
@@ -52,41 +40,41 @@ export function SiteFooter() {
                 {site.name}
               </p>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                {site.city} · Antananarivo
+                {site.city}, Madagascar
               </p>
             </div>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
             {site.tagline}
           </p>
-          <div className="mt-5 flex items-center gap-2">
+          <div className="mt-5 flex items-center gap-4">
             <SocialLink
               href={`mailto:${site.email}`}
               label="Envoyer un e-mail"
               icon="fa-solid fa-envelope"
-              color={brandColors.email}
+              colorClass="text-[#EA4335]"
             />
             {site.phones.map((p) => (
               <SocialLink
                 key={p.tel}
                 href={`tel:${p.tel}`}
                 label={`Appeler le ${p.display}`}
-                icon="fa-solid fa-phone"
-                color={brandColors.phone}
+                icon="fa-solid fa-square-phone"
+                colorClass="text-brand-600 dark:text-brand-400"
               />
             ))}
             <SocialLink
               href={whatsappLink()}
               label="Discuter sur WhatsApp"
-              icon="fa-brands fa-whatsapp"
-              color={brandColors.whatsapp}
+              icon="fa-brands fa-square-whatsapp"
+              colorClass="text-[#25D366]"
               external
             />
             <SocialLink
               href={site.facebook}
               label="Page Facebook Alasora Tech Center"
-              icon="fa-brands fa-facebook"
-              color={brandColors.facebook}
+              icon="fa-brands fa-square-facebook"
+              colorClass="text-[#1877F2]"
               external
             />
           </div>
@@ -143,7 +131,7 @@ export function SiteFooter() {
                 aria-hidden="true"
               />
               <span>
-                Formations à domicile — le formateur se déplace chez vous.
+                Séances à domicile — une salle de formation est en préparation.
               </span>
             </li>
             <li className="flex items-start gap-2.5">

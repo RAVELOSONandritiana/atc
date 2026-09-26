@@ -11,7 +11,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const origin = loaderData?.origin ?? "http://localhost:5173";
   const title = `Nos formations — ${site.name}`;
   const description =
-    "8 formations technologiques à domicile à Alasora, Antananarivo : programmation, développement web et mobile, IA, cybersécurité, réseaux, Arduino et bureautique. 15 000 Ar la séance.";
+    "9 formations technologiques à domicile à Antananarivo : programmation, développement web et mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique. 15 000 Ar la séance.";
 
   return [
     { title },
@@ -58,7 +58,7 @@ export default function FormationsIndex({
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-zinc-950/80"
+            className="absolute inset-0 -z-10 bg-zinc-950/70"
           />
           <div className="mx-auto max-w-6xl px-4 pb-16 pt-32 text-center sm:px-6 sm:pt-36">
             <p className="animate-fade-in text-xs font-bold uppercase tracking-[0.2em] text-brand-300">
@@ -68,7 +68,7 @@ export default function FormationsIndex({
               Choisissez votre compétence
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-zinc-300">
-              8 formations à domicile, {site.pricePerSession.toLocaleString("fr-FR")}{" "}
+              9 formations à domicile, {site.pricePerSession.toLocaleString("fr-FR")}{" "}
               {site.currencyLabel} la séance. Chacune affiche son programme
               complet, ses débouchés et son parcours de dépendances.
             </p>
@@ -97,7 +97,7 @@ export default function FormationsIndex({
                         height={563}
                         loading="lazy"
                         decoding="async"
-                        className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                        className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
                       />
                       <div
                         aria-hidden="true"

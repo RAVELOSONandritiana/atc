@@ -16,9 +16,9 @@ import type { Route } from "./+types/home";
 
 export function meta({ loaderData }: Route.MetaArgs) {
   const origin = loaderData?.origin ?? "http://localhost:5173";
-  const title = `${site.name} — Formations informatiques à domicile à Alasora, Antananarivo`;
+  const title = `${site.name} — Formations informatiques à Antananarivo`;
   const description =
-    "Formations à domicile à Alasora (Antananarivo) : programmation, web, mobile, réseaux, IA, cybersécurité, Arduino et bureautique. 15 000 Ar la séance, séance par séance.";
+    "Formations en informatique à Antananarivo (Madagascar) : programmation, web, mobile, bases de données, réseaux, IA, cybersécurité, Arduino et bureautique. 15 000 Ar la séance, sans engagement.";
 
   return [
     { title },
@@ -56,7 +56,7 @@ export function loader({ request }: Route.LoaderArgs) {
         name: "Où se déroulent les formations ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Les séances se déroulent à domicile : le formateur se déplace chez vous, à Alasora et dans tout Antananarivo.",
+          text: "Actuellement, les séances se déroulent à domicile : le formateur se déplace chez vous, dans tout Antananarivo. Une salle de formation est en préparation.",
         },
       },
       {
@@ -64,7 +64,7 @@ export function loader({ request }: Route.LoaderArgs) {
         name: "Quel est le prix d'une séance ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Chaque séance à domicile coûte ${site.pricePerSession.toLocaleString("fr-FR")} ${site.currencyLabel}, quel que soit le domaine choisi.`,
+          text: `Chaque séance coûte ${site.pricePerSession.toLocaleString("fr-FR")} ${site.currencyLabel}, quel que soit le domaine choisi.`,
         },
       },
       {
@@ -114,8 +114,8 @@ export function loader({ request }: Route.LoaderArgs) {
 }
 
 const stats = [
-  { value: "8", label: "formations au choix" },
-  { value: "15 000 Ar", label: "la séance à domicile" },
+  { value: "9", label: "formations au choix" },
+  { value: "15 000 Ar", label: "la séance" },
   { value: "6", label: "modules par formation" },
 ];
 
@@ -126,14 +126,14 @@ const steps = [
     text: "Huit domaines, du bureautique à l'intelligence artificielle. Si vous hésitez, la programmation est le meilleur point de départ : elle prépare à presque tout le reste.",
   },
   {
-    icon: "fa-solid fa-chalkboard-user",
-    title: "Le formateur vient chez vous",
-    text: "Les séances ont lieu à domicile, sur votre propre ordinateur, à Alasora et dans Antananarivo. Vous choisissez les horaires avec le formateur.",
+    icon: "fa-solid fa-user-tie",
+    title: "Un formateur dédié",
+    text: "Séances individuelles, sur votre propre ordinateur, avec des horaires à convenir avec le formateur. Une salle de formation est aussi en préparation pour les cours en présentiel.",
   },
   {
     icon: "fa-solid fa-laptop-code",
     title: "Vous pratiquez, séance après séance",
-    text: "Chaque module se termine par un exercice concret : une page web, un petit programme, un montage électronique. À la fin, vous avez un projet à montrer.",
+    text: "Chaque module se termine par un exercice concret : une page web, un petit programme, un montage électronique. Vous avancez à votre rythme, le nombre de séances s'adapte à votre niveau.",
   },
 ];
 
@@ -144,9 +144,9 @@ const whyUs = [
     text: "Les séances sont individuelles. Le rythme s'ajuste à votre niveau : on ralentit sur les points difficiles, on accélère sur ce que vous maîtrisez déjà.",
   },
   {
-    icon: "fa-solid fa-house-laptop",
-    title: "Chez vous, sur votre matériel",
-    text: "Pas de trajet vers un centre : on configure et on travaille directement sur votre ordinateur, comme vous le ferez après la formation.",
+    icon: "fa-solid fa-laptop",
+    title: "Sur votre matériel, en conditions réelles",
+    text: "On configure et on travaille directement sur votre ordinateur, comme vous le ferez après la formation — à domicile aujourd'hui, en salle demain.",
   },
   {
     icon: "fa-solid fa-file-invoice",
@@ -163,7 +163,7 @@ const whyUs = [
 const faqs = [
   {
     q: "Où se déroulent les formations ?",
-    a: "À domicile : le formateur se déplace chez vous, à Alasora et dans tout Antananarivo, sur votre propre ordinateur.",
+    a: "Actuellement à domicile : le formateur se déplace chez vous, dans tout Antananarivo, sur votre propre ordinateur. Une salle de formation est en préparation pour les cours en présentiel.",
   },
   {
     q: "Quel est le prix d'une séance ?",
@@ -175,7 +175,7 @@ const faqs = [
   },
   {
     q: "Combien de séances faut-il ?",
-    a: "Chaque formation compte 6 modules ; comptez une séance par module, avec la possibilité de revenir sur les points difficiles. Le rythme reste le vôtre.",
+    a: "Chaque formation est découpée en 6 modules, mais le nombre de séances dépend de votre niveau et de votre rythme : certains vont plus vite, d'autres reviennent sur les points difficiles. Vous décidez avec le formateur.",
   },
   {
     q: "Y a-t-il un certificat à la fin ?",
@@ -236,7 +236,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                     className="fa-solid fa-location-dot text-brand-400"
                     aria-hidden="true"
                   />
-                  Alasora, Antananarivo — formations à domicile
+                  Antananarivo, Madagascar — centre de formation technologique
                 </p>
               </Reveal>
               <Reveal delay={100}>
@@ -249,7 +249,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-300">
                   Apprenez à programmer, créer des sites et des applications,
                   administrer des réseaux ou maîtriser l'ordinateur. Un
-                  formateur se déplace chez vous, une séance à la fois.
+                  formateur dédié vous accompagne, une séance à la fois.
                 </p>
               </Reveal>
               <Reveal delay={300}>
@@ -267,7 +267,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                     to="/formations"
                     className="rounded-md border border-zinc-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-300 hover:bg-white/10"
                   >
-                    Voir les 8 formations
+                    Voir les 9 formations
                   </Link>
                 </div>
               </Reveal>
@@ -350,7 +350,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               <p className="mt-3 max-w-2xl text-zinc-600 dark:text-zinc-400">
                 Trois formations se suivent sans prérequis. Les autres
                 s'ouvrent une fois les bases acquises — chaque fiche détaille
-                son propre schéma de parcours.
+                son propre schéma de dépendances.
               </p>
             </Reveal>
 
@@ -411,7 +411,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                   <div className="flex flex-wrap items-stretch gap-3">
                     {advancedFormations.map((f) => {
                       const prereqNames = f.prerequisites
-                        .map((p) => getFormation(p.slug)?.shortName)
+                        .map(
+                          (p) =>
+                            `${getFormation(p.slug)?.shortName ?? ""}${
+                              p.required ? "" : " (conseillé)"
+                            }`
+                        )
                         .filter(Boolean)
                         .join(" + ");
                       return (
@@ -495,7 +500,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 {site.currencyLabel} la séance
               </h2>
               <p className="mx-auto mt-3 max-w-xl text-zinc-600 dark:text-zinc-400">
-                Le même tarif pour les 8 formations. Vous payez après chaque
+                Le même tarif pour les 9 formations. Vous payez après chaque
                 séance, sans forfait ni engagement — vous arrêtez ou changez
                 de formation quand vous voulez.
               </p>
@@ -505,7 +510,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                     Format
                   </dt>
                   <dd className="mt-1 text-sm font-medium text-zinc-900 dark:text-white">
-                    Individuel, à domicile
+                    Individuel — salle en préparation
                   </dd>
                 </div>
                 <div>
@@ -513,7 +518,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                     Zone
                   </dt>
                   <dd className="mt-1 text-sm font-medium text-zinc-900 dark:text-white">
-                    Alasora & Antananarivo
+                    Antananarivo, Madagascar
                   </dd>
                 </div>
                 <div>
@@ -521,7 +526,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                     Durée
                   </dt>
                   <dd className="mt-1 text-sm font-medium text-zinc-900 dark:text-white">
-                    ~2 h par module, à votre rythme
+                    ~2 h par séance, à votre rythme
                   </dd>
                 </div>
               </dl>
@@ -591,7 +596,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               votre niveau actuel, nous vous répondons avec un plan de départ.
             </p>
           </Reveal>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <Reveal>
               <a
                 href={whatsappLink()}
@@ -599,11 +604,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 rel="noopener noreferrer"
                 className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-emerald-400 dark:border-zinc-800 dark:hover:border-emerald-500"
               >
-                <i
-                  className="fa-brands fa-whatsapp text-xl"
-                  style={{ color: "#25D366" }}
-                  aria-hidden="true"
-                />
+                <i className="fa-brands fa-square-whatsapp text-2xl text-[#25D366]" aria-hidden="true" />
                 <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                   WhatsApp
                 </p>
@@ -618,10 +619,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                   href={`tel:${p.tel}`}
                   className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-brand-400 dark:border-zinc-800 dark:hover:border-brand-500"
                 >
-                  <i
-                    className="fa-solid fa-phone text-xl text-brand-600 dark:text-brand-400"
-                    aria-hidden="true"
-                  />
+                  <i className="fa-solid fa-square-phone text-2xl text-brand-600 dark:text-brand-400" aria-hidden="true" />
                   <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                     Appel direct
                   </p>
@@ -631,16 +629,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 </a>
               </Reveal>
             ))}
-            <Reveal delay={240}>
+            <Reveal delay={160}>
               <a
                 href={`mailto:${site.email}`}
                 className="block h-full rounded-lg border border-zinc-200 p-5 transition-colors hover:border-brand-400 dark:border-zinc-800 dark:hover:border-brand-500"
               >
-                <i
-                  className="fa-solid fa-envelope text-xl"
-                  style={{ color: "#EA4335" }}
-                  aria-hidden="true"
-                />
+                <i className="fa-solid fa-envelope text-2xl text-[#EA4335]" aria-hidden="true" />
                 <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-white">
                   E-mail
                 </p>
@@ -651,21 +645,20 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             </Reveal>
           </div>
           <Reveal delay={150}>
-            <p className="mt-8 text-sm text-zinc-500 dark:text-zinc-400">
-              <i
-                className="fa-brands fa-facebook mr-2 text-[#1877F2]"
-                aria-hidden="true"
-              />
-              Actualités et annonces sur{" "}
-              <a
-                href={site.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-brand-600 underline underline-offset-4 transition-colors hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300"
-              >
-                notre page Facebook
-              </a>{" "}
-              — {site.fullAddress}
+            <p className="mt-8 flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+              <i className="fa-brands fa-facebook text-xl text-[#1877F2]" aria-hidden="true" />
+              <span>
+                Actualités et annonces sur{" "}
+                <a
+                  href={site.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-brand-600 underline underline-offset-4 transition-colors hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300"
+                >
+                  notre page Facebook
+                </a>{" "}
+                — {site.fullAddress}
+              </span>
             </p>
           </Reveal>
         </section>
