@@ -3,8 +3,8 @@
  */
 
 export const site = {
-  name: "Alasora Tech Center",
-  shortName: "ATC",
+  name: "LR Tech Center",
+  shortName: "LR",
   slogan: "Ne soyez plus un simple spectateur",
   tagline:
     "Formations technologiques à Antananarivo, Madagascar — programmation, web, mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique.",
@@ -15,7 +15,7 @@ export const site = {
   addressLocality: "Antananarivo",
   fullAddress: "Antananarivo, Madagascar",
 
-  /** Prix d'une séance de formation à domicile, en Ariary. */
+  /** Prix d'une séance de formation, en Ariary. */
   pricePerSession: 15_000,
   currency: "MGA",
   currencyLabel: "Ar",
@@ -69,7 +69,7 @@ export function whatsappLink(model?: string): string {
     ? ` Je suis intéressé par la formation « ${model} ».`
     : "";
   const text = encodeURIComponent(
-    `Bonjour Alasora Tech Center !${modelLine} Comment s'inscrire ?`
+    `Bonjour LR Tech Center !${modelLine} Comment s'inscrire ?`
   );
   return `https://wa.me/${site.whatsapp.number}?text=${text}`;
 }

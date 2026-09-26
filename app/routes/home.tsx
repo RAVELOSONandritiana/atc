@@ -461,7 +461,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               id="pourquoi-title"
               className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl"
             >
-              Ce que ça change d'apprendre à domicile
+              Pourquoi apprendre avec nous
             </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

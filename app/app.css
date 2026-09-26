@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ─────────────────────────────────────────────────────────────
-   Alasora Tech Center — design system
+   LR Tech Center — design system
    Thèmes clair / sombre pilotés par la classe .dark (voir root.tsx)
    Style volontairement sobre : pas de dégradés décoratifs,
    pas d'ombres colorées, animations discrètes.

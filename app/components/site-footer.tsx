@@ -33,7 +33,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2.5">
             <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-xs font-bold text-white">
-              ATC
+              LR
             </span>
             <div className="leading-tight">
               <p className="text-sm font-bold text-zinc-900 dark:text-white">
@@ -72,7 +72,7 @@ export function SiteFooter() {
             />
             <SocialLink
               href={site.facebook}
-              label="Page Facebook Alasora Tech Center"
+              label="Page Facebook LR Tech Center"
               icon="fa-brands fa-square-facebook"
               colorClass="text-[#1877F2]"
               external

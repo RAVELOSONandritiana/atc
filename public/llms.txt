@@ -1,10 +1,10 @@
-# Alasora Tech Center
+# LR Tech Center
 
 > Centre de formation technologique basé à Antananarivo, Madagascar.
 > Slogan : « Ne soyez plus un simple spectateur ».
 > Site : https://A-COMPLETER-LORS-DE-LA-MISE-EN-LIGNE (une fois le domaine enregistré, remplacer cette URL partout, y compris ici)
 
-Alasora Tech Center (ATC) propose des séances de formation individuelles,
+LR Tech Center (LR — « Linear Regression ») propose des séances de formation individuelles,
 actuellement dispensées **à domicile** par un formateur qui se déplace chez
 l'apprenant, dans tout Antananarivo (Madagascar). **Une salle de formation
 est en préparation** pour les cours en présentiel. 9 formations couvrent les compétences

@@ -109,3 +109,34 @@ Error: Cannot find module '~/components/brand-icons' imported from '/home/hashte
 11:32:19 AM [vite] (ssr) page reload app/routes/formations.$slug.tsx
 11:32:19 AM [vite] (ssr) program reload
 11:33:01 AM [vite] (ssr) program reload
+11:33:29 AM [vite] (client) hmr update /app/root.tsx, /app/routes/home.tsx, /app/components/site-header.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
+11:33:29 AM [vite] (client) hmr update /app/root.tsx, /app/routes/home.tsx, /app/components/site-header.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
+11:33:29 AM [vite] (client) hmr update /app/root.tsx, /app/routes/home.tsx, /app/components/site-header.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx, /app/app.css
+11:33:29 AM [vite] (ssr) page reload app/data/site.ts
+11:33:29 AM [vite] (ssr) program reload
+11:33:29 AM [vite] (client) hmr update /app/routes/home.tsx
+11:33:29 AM [vite] (client) hmr update /app/routes/home.tsx
+11:33:29 AM [vite] (client) hmr update /app/routes/home.tsx, /app/app.css
+11:33:29 AM [vite] (ssr) page reload app/routes/home.tsx
+11:33:29 AM [vite] (ssr) program reload
+11:41:57 AM [vite] (client) hmr update /app/root.tsx, /app/routes/home.tsx, /app/components/site-header.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
+11:41:57 AM [vite] (client) hmr update /app/root.tsx, /app/routes/home.tsx, /app/components/site-header.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx
+11:41:57 AM [vite] (client) hmr update /app/root.tsx, /app/routes/home.tsx, /app/components/site-header.tsx, /app/components/site-footer.tsx, /app/routes/formations.$slug.tsx, /app/components/roadmap.tsx, /app/routes/formations._index.tsx, /app/app.css
+11:41:57 AM [vite] (ssr) page reload app/data/site.ts
+11:41:57 AM [vite] (ssr) program reload
+11:41:57 AM [vite] (client) hmr update /app/components/site-footer.tsx
+11:41:57 AM [vite] (client) hmr update /app/components/site-footer.tsx
+11:41:57 AM [vite] (client) hmr update /app/components/site-footer.tsx, /app/app.css
+11:41:57 AM [vite] (ssr) page reload app/components/site-footer.tsx
+11:41:57 AM [vite] (ssr) program reload
+11:42:07 AM [vite] (client) hmr update /app/components/site-header.tsx
+11:42:07 AM [vite] (client) hmr update /app/components/site-header.tsx
+11:42:07 AM [vite] (client) hmr update /app/components/site-header.tsx, /app/app.css
+11:42:07 AM [vite] (ssr) page reload app/components/site-header.tsx
+11:42:07 AM [vite] (ssr) program reload
+11:42:07 AM [vite] (client) hmr update /app/app.css
+11:42:07 AM [vite] (client) hmr update /app/app.css
+11:42:07 AM [vite] (client) hmr update /app/app.css
+11:42:07 AM [vite] (ssr) hmr update /app/app.css
+11:42:52 AM [vite] (ssr) program reload
+11:43:09 AM [vite] (ssr) program reload
