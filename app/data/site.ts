@@ -16,7 +16,7 @@ export const site = {
   fullAddress: "Antananarivo, Madagascar",
 
   /** Prix d'une séance de formation, en Ariary. */
-  pricePerSession: 15_000,
+  pricePerSession: 10_000,
   currency: "MGA",
   currencyLabel: "Ar",
 

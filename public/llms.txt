@@ -1,7 +1,7 @@
 # LR Tech Center
 
 > Centre de formation technologique à Antananarivo (Madagascar) : 9 formations
-> en informatique dispensées en séances individuelles à domicile, 15 000 Ariary
+> en informatique dispensées en séances individuelles à domicile, 10 000 Ariary
 > (MGA) la séance de 2 heures, sans engagement. Slogan : « Ne soyez plus un
 > simple spectateur ».
 
@@ -34,7 +34,7 @@ LR Tech Center sans visiter les autres pages. Il est aussi listé dans
 
 ## Tarif et organisation des séances
 
-- **Prix** : 15 000 Ariary (MGA) par séance, quel que soit le domaine choisi.
+- **Prix** : 10 000 Ariary (MGA) par séance, quel que soit le domaine choisi.
 - **Durée** : environ 2 heures par séance.
 - **Paiement** : séance par séance, après la séance. Aucun forfait, aucun
   engagement — l'apprenant peut arrêter ou changer de formation quand il veut.
@@ -70,7 +70,7 @@ pré-rempli), par téléphone ou par e-mail :
 Chaque formation a sa page `/formations/<slug>` avec : description,
 programme détaillé (6 modules), fiche technique (format, tarif, niveau,
 prérequis, zone), débouchés professionnels et diagramme interactif des
-dépendances entre formations. Tarif unique : 15 000 Ar la séance.
+dépendances entre formations. Tarif unique : 10 000 Ar la séance.
 
 ### 1. Programmation — /formations/programmation
 
@@ -236,7 +236,7 @@ bureaux.
 - **Où se déroulent les formations ?** Actuellement à domicile : le formateur
   se déplace chez vous, dans tout Antananarivo, sur votre propre ordinateur.
   Une salle de formation est en préparation pour les cours en présentiel.
-- **Quel est le prix d'une séance ?** 15 000 Ariary (Ar) la séance, quel que
+- **Quel est le prix d'une séance ?** 10 000 Ariary (Ar) la séance, quel que
   soit le domaine. Paiement séance par séance, sans engagement.
 - **Faut-il déjà savoir programmer ?** Non. Programmation, bureautique et
   Arduino sont accessibles aux débutants. Les autres formations indiquent

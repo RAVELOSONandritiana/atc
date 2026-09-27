@@ -21,10 +21,10 @@ function SocialLink(props: {
         src={props.icon}
         alt=""
         aria-hidden="true"
-        width={24}
-        height={24}
+        width={32}
+        height={32}
         loading="lazy"
-        className="h-6 w-6 object-contain"
+        className="h-8 w-8 object-contain"
       />
     </a>
   );
@@ -43,13 +43,13 @@ export function SiteFooter() {
               width={36}
               height={36}
               loading="lazy"
-              className="h-9 w-9 rounded-lg object-contain"
+              className="h-16 w-16 rounded-lg object-contain"
             />
             <div className="leading-tight">
-              <p className="text-sm font-bold text-zinc-900 dark:text-white">
+              <p className="text-md font-bold text-zinc-900 dark:text-white">
                 {site.name}
               </p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
                 {site.city}, Madagascar
               </p>
             </div>

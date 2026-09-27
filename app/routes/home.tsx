@@ -18,7 +18,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const origin = loaderData?.origin ?? "http://localhost:5173";
   const title = `${site.name} — Formations informatiques à Antananarivo`;
   const description =
-    "Formations en informatique à Antananarivo (Madagascar) : programmation, web, mobile, bases de données, réseaux, IA, cybersécurité, Arduino et bureautique. 15 000 Ar la séance, sans engagement.";
+    "Formations en informatique à Antananarivo (Madagascar) : programmation, web, mobile, bases de données, réseaux, IA, cybersécurité, Arduino et bureautique. 10 000 Ar la séance, sans engagement.";
 
   return [
     { title },
@@ -112,7 +112,7 @@ export function loader({ request }: Route.LoaderArgs) {
 
 const stats = [
   { value: "9", label: "formations au choix" },
-  { value: "15 000 Ar", label: "la séance" },
+  { value: "10 000 Ar", label: "la séance" },
   { value: "6", label: "modules par formation" },
 ];
 
@@ -195,7 +195,6 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   return (
     <>
-      <SiteHeader />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -692,7 +691,6 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           </Reveal>
         </section>
       </main>
-      <SiteFooter />
     </>
   );
 }

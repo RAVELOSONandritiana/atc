@@ -11,7 +11,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const origin = loaderData?.origin ?? "http://localhost:5173";
   const title = `Nos formations — ${site.name}`;
   const description =
-    "9 formations technologiques à Antananarivo : programmation, développement web et mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique. 15 000 Ar la séance.";
+    "9 formations technologiques à Antananarivo : programmation, développement web et mobile, bases de données, IA, cybersécurité, réseaux, Arduino et bureautique. 10 000 Ar la séance.";
 
   return [
     { title },
@@ -44,7 +44,6 @@ export default function FormationsIndex({
 }: Route.ComponentProps) {
   return (
     <>
-      <SiteHeader />
       <main id="main">
         <section className="relative isolate overflow-hidden">
           <img
@@ -107,7 +106,7 @@ export default function FormationsIndex({
                         {f.level}
                       </span>
                       <span className="absolute right-3 top-3 rounded-md bg-zinc-900/85 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur dark:bg-zinc-950/85">
-                        15 000 Ar / séance
+                        10 000 Ar / séance
                       </span>
                     </div>
                     <div className="flex flex-1 flex-col p-6">
@@ -178,7 +177,6 @@ export default function FormationsIndex({
           </Reveal>
         </section>
       </main>
-      <SiteFooter />
     </>
   );
 }

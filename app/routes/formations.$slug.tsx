@@ -115,7 +115,6 @@ export default function FormationDetail({
 
   return (
     <>
-      <SiteHeader />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
@@ -484,7 +483,6 @@ export default function FormationDetail({
           </Reveal>
         </section>
       </main>
-      <SiteFooter />
     </>
   );
 }
